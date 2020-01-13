@@ -1,0 +1,67 @@
+body {
+    background-color: red;
+}
+
+/*navbar*/
+/*.bg-light {
+    background-color: transparent;
+}*/
+
+.callout-container-home {
+    height: 100vh;
+    background: url('../images/stock-photo-glasgow-scotland-october-the-river-clyde-south-portland-street-suspension-bridge-627321458.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+}
+
+/*jumbotron*/
+.jumbotron {
+   /* background-color: transparent;*/
+}
+.welcome-container-home {
+    height: 100vh;
+    background: url('../images/guy-image.png') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.neighbourhoods-container-home {
+    height: 100vh;
+    background: url('../images/whiskey-background.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+}
+
+.accommmodation-container-home {
+    height: 100vh;
+    background: url('../images/whiskey-background.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+}
+
+.localinfo-container-home {
+    height: 100vh;
+    background: url('../images/whiskey-background.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;  
+}
