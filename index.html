@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">/</a>
+                    <a class="nav-link" href="#neighbourhoods">neighbourhoods</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">/</a>
+                    <a class="nav-link" href="#accommodation">accommodation</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">/</a>
+                    <a class="nav-link" href="#local services">local services</a>
                 </li>
             </ul>
         </div>
@@ -38,6 +38,7 @@
                 <div class="col-12">
                     <section class="jumbotron text-center">
                         <h1 class="heading-text">Glasgow</h1>
+                        <p> A millenial's guide to living in Glasgow </p>
                     </section>
                 </div>
             </div>
@@ -50,6 +51,7 @@
                 <div class="col-12">
                     <section class="jumbotron text-center">
                         <h1 class="heading-text">Glasgow</h1>
+                        <p>With an intoxicating blend of modern architecture, vibrant culture and friendly people this once industrial city has undergone a renaisance to become an ideal  destination for those seeking study and work. </p>
                     </section>
                 </div>
             </div>
@@ -57,28 +59,36 @@
         <!-- /welcome -->
 
         <!-- neighbourhoods -->
-        <div class="container-fluid neighbourhoods-container-home">
-          <div class="row">
+        <div class="container-fluid neighbourhoods-container-home" id ="neighbourhoods">
+            <div class="row">
                 <div class="col-12">
                     <section class="jumbotron text-center">
-                        <h1 class="heading-text">Glasgow</h1>
+                        <h1 class="heading-text">Neighbourhoods</h1>
                     </section>
                 </div>
             </div>
-            </div>
+            <div id="map"></div>
+        </div>
         <!-- /neighbourhoods -->
 
         <!-- accommodation -->
-        <div class="container-fluid accommmodation-container-home">
+        <div class="container-fluid accommmodation-container-home" id="accommodation">
+            <div class="row">
+                <div class="col-12">
+                    <section class="jumbotron text-center">
+                        <h1 class="heading-text">Accommodation</h1>
+                    </section>
+                </div>
+            </div>
         </div>
         <!-- /accommodation -->
 
         <!-- local info -->
-        <div class="container-fluid localinfo-container-home">
+        <div class="container-fluid localservices-container-home" id="local services">
           <div class="row">
                 <div class="col-12">
                     <section class="jumbotron text-center">
-                        <h1 class="heading-text">Glasgow</h1>
+                        <h1 class="heading-text">Local Services</h1>
                     </section>
                 </div>
             </div>
@@ -86,7 +96,55 @@
         <!-- /local info -->
 
     </article>
-    <footer>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="d-none d-sm-block col-sm-6">
+                <h2 class="uppercase general-sub">Join the mailing list</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="offset-2 col-8">
+                            <label class="sr-only" for="exampleInputEmail1">Email address</label>
+                            <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. jane@gmail.com" required>
+                        </div>
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-info btn-md">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-sm-6 ">
+                <h2 id="social-margin" class="uppercase general-sub">Let's get social</h2>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="https://en-gb.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en-gb " target="_blank">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://uk.linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <!-- Javascript for navbar --->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
