@@ -23,6 +23,11 @@
 .jumbotron {
     background-color: transparent;
 }
+
+#map {
+    min-height: 360px;
+}
+
 .welcome-container-home {
     height: 100vh;
     background: white;
