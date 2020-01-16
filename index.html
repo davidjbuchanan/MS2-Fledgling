@@ -98,6 +98,67 @@
                     <section class="jumbotron text-center">
                         <h1 class="heading-text">Accommodation</h1>
                     </section>
+                    <div>
+                        <h3 class="contact-heading uppercase text-center">Want some help finding accommodation?</h3>
+                        <h5 class="uppercase text-center">Fill in the form below and our partners will be in touch</h5>
+                    </div>
+                    <div class="center-form">
+                        <form onsubmit="return sendMail(this);">
+                            <label for="exampleInputName">Your name</label>
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+
+                            <label for="exampleFormControlSelect1">How would you describe yourself?</label>
+                            <select class="form-control" name="employmentstatus" id="exampleFormControlSelect1">
+                                <option>undergraduate student</option>
+                                <option>postgraduate student</option>
+                                <option>young professional</option>
+                                <option>mature professional / student</option>
+                            </select>
+                            <label for="exampleFormControlSelect2">Which neighbourhoods are of interest to you?</label>
+                            <!--Which neighbourhoods are of interest to you?-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Neighbourhood 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Neighbourhood 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3">
+                                    Neighbourhood 3
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                <label class="form-check-label" for="defaultCheck4">
+                                    Neighbourhood 4
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                <label class="form-check-label" for="defaultCheck5">
+                                    Neighbourhood 5
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                <label class="form-check-label" for="defaultCheck6">
+                                    Neighbourhood 6
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary center-block">Submit request</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
