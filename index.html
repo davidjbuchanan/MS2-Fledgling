@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!--EmailJS snipit start disabled    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_VuHH7gH01MALuxjLWlXKy");
+
+            emailjs.send('gmail', 'confirmation_of_receipt_fledgling', {
+                name: "Davidd", 
+                notes: "this is a notee"
+            })
+       })();
+    </script>
+    
+    EmailJS snipit end--> 
+
     <title>Fledgling Glasgow</title>
 </head>
 <body>
@@ -67,7 +83,11 @@
                     </section>
                 </div> 
             </div>
-            <div id="map"></div> 
+            <div class="row">
+                <div class="col-6 offset-5">
+                    <div id="map"></div>
+                </div>
+            </div>     
         </div>
         <!-- /neighbourhoods -->
 
@@ -100,7 +120,7 @@
         <div class="row">
             <div class="d-none d-sm-block col-sm-6">
                 <h2 class="uppercase general-sub">Join the mailing list</h2>
-                <form>
+                <form onsubmit="return sendMail (this);" method="POST">
                     <div class="form-row">
                         <div class="offset-2 col-8">
                             <label class="sr-only" for="exampleInputEmail1">Email address</label>
@@ -151,18 +171,27 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       --->
-   <script> 
+
+    <!--Javascript for google maps API-->
+    <script> 
         function initMap() {
 
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 3,
-                center: {lat: -28.024, lng: 140.887}
+                zoom: 15,
+                center: {lat: 55.8597, lng: -4.2550} <!--citycentre-->
+                <!--center: {lat: 55.8636, lng: -4.2825} Finnieston-->
+                <!--center: {lat: 55.8772, lng: -4.2904} westend-->
+                <!--center: {lat: 55.8597, lng: -4.2300} eastend-->
+                <!--center: {lat: 55.8588, lng: -4.2489} merchant city needs a zoom in-->
+                <!--center: {lat: 55.8430, lng: -4.2636} southside needs a zoom out-->
             });
         }
     </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7t0qArTLvSFnKic1SCS_xg07cnDw4Kk&callback=initMap">
-    </script>
-       
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7t0qArTLvSFnKic1SCS_xg07cnDw4Kk&callback=initMap"></script>
+    <!--End-Javascript for google maps API-->
+    <!--Javascript for emailJS API-->
+    <script src="assets/js/sendEmail.js"></script> 
+    <!--End-Javascript for emailJS API--> 
 </body>
 </html>
