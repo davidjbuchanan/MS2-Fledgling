@@ -80,14 +80,50 @@
                     </section>
                 </div> 
             </div>
+            
             <div class="row">
-                <div class="col-6 offset-5">
+                <div class="col-6">
+                    <div class="list-group" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#city" role="tab">City Centre</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#finn" role="tab">Finnieston</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#west" role="tab">West End</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#east" role="tab">East End</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#south" role="tab">South Side</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#merch" role="tab">Merchant City</a>
+                    </div>
+                </div>
+              
+                <div class="col-6">
                     <div id="map"></div>
+                </div> 
+            </div>
+            
+            <div class="row">
+                <div class="col-8">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="city" role="tabpanel">
+                            Glasgow's city centre changes character as you move from east to west, going from a frenetic blend of services, transport terminals, pubs and shops to the more sedate terraces of thoroughfares like Bath St, where upmarket offices sit over basements converted into stylish bars. This is where much of the city's quality accommodation is clustered and is also a studenty zone, with a major nightlife nexus on Sauchiehall St, which runs the length of the neighbourhood.  
+                        </div>
+                        <div class="tab-pane" id="finn" role="tabpanel">
+                            Finnieston is a hip foodie hub of gourmet sandwich shops, artisanal coffee bars and trendy organic restaurants specializing in Scottish meat and seafood. Craft beers and gins are served up at stylish bars, while old-school pubs offer vast whisky selections and traditional folk music sessions. The striking riverside venues SEC Armadillo and SSE Hydro stage rock and pop shows.
+                        </div>
+                        <div class="tab-pane" id="west" role="tabpanel">
+                            With its appealing studenty buzz, modish bars and cafes and bohemian swagger, the West End is for many the most engaging area of Glasgow – it's great for people-watching. Streets of elegant terraced houses and ample parkland cover large areas of the district, which is centred around the Victorian grandeur of the University of Glasgow and the Kelvingrove Art Gallery & Museum. Glasgow's key eat streets are also here.
+                        </div>
+                        <div class="tab-pane" id="east" role="tabpanel">
+                            The East End includes the oldest part of the city, concentrated around Glasgow Cathedral, and a range of traditional Glasgow districts that are fast becoming hubs of creative activity. One of these, the Calton, once famous for its linen mills, is now one of Britain's poorest areas; it hums with life at its famous weekend Barras market. It's a predominantly Catholic area and a major focus of worship is the stadium of Celtic FC just down the road.
+                        </div>
+                        <div class="tab-pane" id="south" role="tabpanel">
+                            Once a thriving shipbuilding area, the Clyde sank into dereliction during the post-war era but has been subject to extensive rejuvenation. There are noteworthy sights along the river, though the walk along its banks still isn't all that it could be.
+                        </div>
+                        <div class="tab-pane" id="merch" role="tabpanel">
+                            What was once the domain of sober industrialists, whose palaces of trade and commerce dignify the area, Merchant City is now a playground of restaurants, bars and shops. It's an atmospheric zone that rewards idle strolling with handsome facades and quirky architectural details. Come night-time, there's a buzzy vibe as the area fills with social life and the knot of LGBT venues known as the Pink Triangle starts to hum.
+                        </div>
+                    </div>
                 </div>
             </div>     
         </div>
         <!-- /neighbourhoods -->
-
         <!-- accommodation -->
         <div class="container-fluid accommmodation-container-home" id="accommodation">
             <div class="row">
@@ -117,37 +153,37 @@
                             <!--Which neighbourhoods are of interest to you?-->
                             <label for="exampleFormControlSelect2">Which neighbourhoods are of interest to you?</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood1" value="City centre" id="check1" onclick="hood1()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood1" value="City centre" id="check1">
                                 <label class="form-check-label" for="defaultCheck1">
                                     City centre
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood2" value="Finnieston" id="check2" onclick="hood2()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood2" value="Finnieston" id="check2">
                                 <label class="form-check-label" for="defaultCheck2">
                                     Finnieston
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood3" value="West End" id="check3" onclick="hood3()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood3" value="West End" id="check3">
                                 <label class="form-check-label" for="defaultCheck3">
                                     West End
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood4" value="East End" id="check4" onclick="hood4()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood4" value="East End" id="check4">
                                 <label class="form-check-label" for="defaultCheck4">
                                     East End
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood5" value="South side" id="check5" onclick="hood5()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood5" value="South side" id="check5">
                                 <label class="form-check-label" for="defaultCheck5">
                                     South side
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="neighbourhood6" value="Merchant City" id="check6" onclick="hood6()">
+                                <input class="form-check-input" type="checkbox" name="neighbourhood6" value="Merchant City" id="check6">
                                 <label class="form-check-label" for="defaultCheck6">
                                     Merchant City
                                 </label>
@@ -225,30 +261,17 @@
             </div>
         </div>
     </footer>
-    <!-- Javascript for navbar --->
-    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- Javascript for navbar and neighbourhood list--->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      --->
+    
 
     <!--Javascript for google maps API-->
-    <script> 
-        function initMap() {
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: {lat: 55.8597, lng: -4.2550} <!--citycentre-->
-                <!--center: {lat: 55.8636, lng: -4.2825} Finnieston-->
-                <!--center: {lat: 55.8772, lng: -4.2904} westend-->
-                <!--center: {lat: 55.8597, lng: -4.2300} eastend-->
-                <!--center: {lat: 55.8588, lng: -4.2489} merchant city needs a zoom in-->
-                <!--center: {lat: 55.8430, lng: -4.2636} southside needs a zoom out-->
-            });
-        }
-    </script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7t0qArTLvSFnKic1SCS_xg07cnDw4Kk&callback=initMap"></script>
+    <script> src="assets/js/maps.js"></script>
     <!--End-Javascript for google maps API-->
+    
     <!--Javascript for emailJS API-->
     <script src="assets/js/sendEmail.js"></script> 
     <!--End-Javascript for emailJS API--> 
