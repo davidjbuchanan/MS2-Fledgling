@@ -1,12 +1,19 @@
 
 /*navbar*/
-/*.bg-light {
-    background-color: transparent;
-}*/
+
+
+.bg-dark {
+    background-color: transparent !important;
+}
+
+.bg-dark.scrolled {
+    background-color: rgba(0,0,0) !important;
+}
+
 
 .callout-container-home {
     height: 100vh;
-    background: url('../images/stock-photo-glasgow-scotland-october-the-river-clyde-south-portland-street-suspension-bridge-627321458.jpg') no-repeat center fixed;
+    background: url('../images/stock-photo-city-scape-st-vincent-street-glasgow-749666785.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,13 +31,18 @@
     background-color: transparent;
 }
 
-#map {
-    min-height: 360px;
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .welcome-container-home {
     height: 100vh;
-    background: white;
+    background: url('../images/stock-photo-glasgow-scotland-july-equestrian-statue-of-duke-of-wellington-wearing-a-traffic-cone-on-his-706698670.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,16 +63,19 @@
     -o-background-size: cover;
     background-size: cover;
 
-    display: flex;
+    /*display: flex;                       otherwise the map is hidden beneath the bg*/
     /*align-items: center;*/
     justify-content: center;
 
     position: relative;
 }
 
+#map {
+    min-height: 700px;
+}
 .accommmodation-container-home {
     height: 100vh;
-    background: url('../images/stock-photo-modern-bedroom-with-rustic-wooden-headboard-and-white-linen-and-pillows-copper-lamp-shade-airbnb-1323058058.jpg') no-repeat center fixed;
+    background: url('../images/stock-photo-view-from-the-top-of-the-evening-courtyard-of-the-city-of-glasgow-in-winter-1041230992.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -76,7 +91,7 @@
 
 .localservices-container-home {
     height: 100vh;
-    background: url('../images/stock-vector-locators-icons-132571475.jpg') no-repeat center fixed;
+    background:  white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
