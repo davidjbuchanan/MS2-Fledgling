@@ -4,10 +4,12 @@
 
 .bg-dark {
     background-color: transparent !important;
+    transition: 1000ms, ease;     /* !!!!!!!!!!!!!!!!!!!not working*/
 }
 
 .bg-dark.scrolled {
-    background-color: rgba(0,0,0) !important;
+    background-color: rgb(51, 40, 82) !important;
+
 }
 
 
@@ -57,17 +59,17 @@
 
 .neighbourhoods-container-home {
     height: 100vh;
-    background: url('../images/stock-photo-blank-directional-road-signs-against-blue-sky-black-metal-arrows-on-the-signpost-warm-toned-644785699.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
+    background-color: white;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
-    /*display: flex;                       otherwise the map is hidden beneath the bg*/
-    /*align-items: center;*/
+    display: flex;                       /delete otherwise the map is hidden beneath the bg
+    align-items: center;                   delete otherwise the map is hidden beneath the bg
     justify-content: center;
 
-    position: relative;
+    position: relative;*/
 }
 
 #map {
@@ -75,12 +77,13 @@
 }
 .accommmodation-container-home {
     height: 100vh;
-    background: url('../images/stock-photo-view-from-the-top-of-the-evening-courtyard-of-the-city-of-glasgow-in-winter-1041230992.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    -webkit-background-size: cover%;
+    -moz-background-size: cover%;
+    -o-background-size: cover%;
     background-size: cover;
-
+    
+    
     display: flex;
     display: flex;
     /*align-items: center;*/
