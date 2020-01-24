@@ -79,94 +79,100 @@
 		<div class="container-fluid neighbourhoods-container-home" id="neighbourhoods">
 			<div class="row">
 				<div class="col-6">
+					<section class="jumbotron text-center">
+						<h1 class="heading-text">Neighbourhoods</h1>
+					</section>
+					<div class="row">
+						<ul class="list-group list-group-horizontal" id="myList" role="tablist">
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action active" data-toggle="list" href="#city"
+									role="tab" onclick="changeCenter(centre)">City Centre</a>
+							</li>
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action" data-toggle="list" href="#finn"
+									role="tab" onclick="changeCenter(finn)">Finnieston</a>
+							</li>
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action" data-toggle="list" href="#west" role="tab"
+								onclick="changeCenter(westend)">West End</a>
+							</li>
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action" data-toggle="list" href="#east" role="tab"
+								onclick="changeCenter(eastend)">East End</a>
+							</li>
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action" data-toggle="list" href="#south" role="tab"
+								role="tab" onclick="changeCenter(southside)">South Side</a>
+							</li>
+							<li class="col-2">
+								<a class="list-group-item list-group-item-action" data-toggle="list" href="#merch" role="tab"
+								role="tab" onclick="changeCenter(merchant)">Merchant City</a>
+							</li>
+						</ul>
+					</div>
 					<div class="row">
 						<div class="col-12">
-							<section class="jumbotron text-center">
-								<h1 class="heading-text">Neighbourhoods</h1>
-							</section>
-						</div>
-						<div class="row">
-							<div class="col-12">
-								<div class="list-group list-group-horizontal" id="myList" role="tablist">
-									<a class="list-group-item list-group-item-action active" data-toggle="list"
-										href="#city" role="tab" onclick="changeCenter(centre)">City Centre</a>
-									<a class="list-group-item list-group-item-action" data-toggle="list" href="#finn"
-										role="tab" onclick="changeCenter(finn)">Finnieston</a>
-									<a class="list-group-item list-group-item-action" data-toggle="list" href="#west"
-										role="tab" onclick="changeCenter(westend)">West End</a>
-									<a class="list-group-item list-group-item-action" data-toggle="list" href="#east"
-										role="tab" onclick="changeCenter(eastend)">East End</a>
-									<a class="list-group-item list-group-item-action" data-toggle="list" href="#south"
-										role="tab" onclick="changeCenter(southside)">South Side</a>
-									<a class="list-group-item list-group-item-action" data-toggle="list" href="#merch"
-										role="tab" onclick="changeCenter(merchant)">Merchant City</a>
+							<div class="tab-content">
+								<div class="tab-pane active" id="city" role="tabpanel">
+									Glasgow's city centre changes character as you move from east to west, going
+									from a
+									frenetic blend of services, transport terminals, pubs and shops to the more
+									sedate
+									terraces of thoroughfares like Bath St, where upmarket offices sit over
+									basements
+									converted into stylish bars. This is where much of the city's quality
+									accommodation
+									is clustered and is also a studenty zone, with a major nightlife nexus on
+									Sauchiehall St, which runs the length of the neighbourhood.
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12">
-								<div class="tab-content">
-									<div class="tab-pane active" id="city" role="tabpanel">
-										Glasgow's city centre changes character as you move from east to west, going
-										from a
-										frenetic blend of services, transport terminals, pubs and shops to the more
-										sedate
-										terraces of thoroughfares like Bath St, where upmarket offices sit over
-										basements
-										converted into stylish bars. This is where much of the city's quality
-										accommodation
-										is clustered and is also a studenty zone, with a major nightlife nexus on
-										Sauchiehall St, which runs the length of the neighbourhood.
-									</div>
-									<div class="tab-pane" id="finn" role="tabpanel">
-										Finnieston is a hip foodie hub of gourmet sandwich shops, artisanal coffee bars
-										and
-										trendy organic restaurants specializing in Scottish meat and seafood. Craft
-										beers
-										and gins are served up at stylish bars, while old-school pubs offer vast whisky
-										selections and traditional folk music sessions. The striking riverside venues
-										SEC
-										Armadillo and SSE Hydro stage rock and pop shows.
-									</div>
-									<div class="tab-pane" id="west" role="tabpanel">
-										With its appealing studenty buzz, modish bars and cafes and bohemian swagger,
-										the
-										West End is for many the most engaging area of Glasgow – it's great for
-										people-watching. Streets of elegant terraced houses and ample parkland cover
-										large
-										areas of the district, which is centred around the Victorian grandeur of the
-										University of Glasgow and the Kelvingrove Art Gallery & Museum. Glasgow's key
-										eat
-										streets are also here.
-									</div>
-									<div class="tab-pane" id="east" role="tabpanel">
-										The East End includes the oldest part of the city, concentrated around Glasgow
-										Cathedral, and a range of traditional Glasgow districts that are fast becoming
-										hubs
-										of creative activity. One of these, the Calton, once famous for its linen mills,
-										is
-										now one of Britain's poorest areas; it hums with life at its famous weekend
-										Barras
-										market. It's a predominantly Catholic area and a major focus of worship is the
-										stadium of Celtic FC just down the road.
-									</div>
-									<div class="tab-pane" id="south" role="tabpanel">
-										Once a thriving shipbuilding area, the Clyde sank into dereliction during the
-										post-war era but has been subject to extensive rejuvenation. There are
-										noteworthy
-										sights along the river, though the walk along its banks still isn't all that it
-										could be.
-									</div>
-									<div class="tab-pane" id="merch" role="tabpanel">
-										What was once the domain of sober industrialists, whose palaces of trade and
-										commerce dignify the area, Merchant City is now a playground of restaurants,
-										bars
-										and shops. It's an atmospheric zone that rewards idle strolling with handsome
-										facades and quirky architectural details. Come night-time, there's a buzzy vibe
-										as
-										the area fills with social life and the knot of LGBT venues known as the Pink
-										Triangle starts to hum.
-									</div>
+								<div class="tab-pane" id="finn" role="tabpanel">
+									Finnieston is a hip foodie hub of gourmet sandwich shops, artisanal coffee bars
+									and
+									trendy organic restaurants specializing in Scottish meat and seafood. Craft
+									beers
+									and gins are served up at stylish bars, while old-school pubs offer vast whisky
+									selections and traditional folk music sessions. The striking riverside venues
+									SEC
+									Armadillo and SSE Hydro stage rock and pop shows.
+								</div>
+								<div class="tab-pane" id="west" role="tabpanel">
+									With its appealing studenty buzz, modish bars and cafes and bohemian swagger,
+									the
+									West End is for many the most engaging area of Glasgow – it's great for
+									people-watching. Streets of elegant terraced houses and ample parkland cover
+									large
+									areas of the district, which is centred around the Victorian grandeur of the
+									University of Glasgow and the Kelvingrove Art Gallery & Museum. Glasgow's key
+									eat
+									streets are also here.
+								</div>
+								<div class="tab-pane" id="east" role="tabpanel">
+									The East End includes the oldest part of the city, concentrated around Glasgow
+									Cathedral, and a range of traditional Glasgow districts that are fast becoming
+									hubs
+									of creative activity. One of these, the Calton, once famous for its linen mills,
+									is
+									now one of Britain's poorest areas; it hums with life at its famous weekend
+									Barras
+									market. It's a predominantly Catholic area and a major focus of worship is the
+									stadium of Celtic FC just down the road.
+								</div>
+								<div class="tab-pane" id="south" role="tabpanel">
+									Once a thriving shipbuilding area, the Clyde sank into dereliction during the
+									post-war era but has been subject to extensive rejuvenation. There are
+									noteworthy
+									sights along the river, though the walk along its banks still isn't all that it
+									could be.
+								</div>
+								<div class="tab-pane" id="merch" role="tabpanel">
+									What was once the domain of sober industrialists, whose palaces of trade and
+									commerce dignify the area, Merchant City is now a playground of restaurants,
+									bars
+									and shops. It's an atmospheric zone that rewards idle strolling with handsome
+									facades and quirky architectural details. Come night-time, there's a buzzy vibe
+									as
+									the area fills with social life and the knot of LGBT venues known as the Pink
+									Triangle starts to hum.
 								</div>
 							</div>
 						</div>
