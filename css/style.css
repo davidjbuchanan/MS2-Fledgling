@@ -1,7 +1,6 @@
 
 /*navbar*/
 
-
 .bg-dark {
     background-color: transparent !important;
     transition: 1000ms, ease;     /* !!!!!!!!!!!!!!!!!!!not working*/
@@ -11,7 +10,12 @@
     background-color: rgb(51, 40, 82) !important;
 
 }
-
+/*.list-group {
+position: center;
+} 
+.list-group-horizontal{
+position: center;
+}*/
 
 .callout-container-home {
     height: 100vh;
@@ -74,6 +78,10 @@
 
 #map {
     min-height: 700px;
+}
+
+li {
+    list-style-type: none;
 }
 .accommmodation-container-home {
     height: 100vh;
