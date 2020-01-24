@@ -10,12 +10,7 @@
     background-color: rgb(51, 40, 82) !important;
 
 }
-/*.list-group {
-position: center;
-} 
-.list-group-horizontal{
-position: center;
-}*/
+
 
 .callout-container-home {
     height: 100vh;
@@ -81,7 +76,7 @@ position: center;
 }
 
 li {
-    list-style-type: none;
+    list-style-type: none;   /*removes black dot*/
 }
 .accommmodation-container-home {
     height: 100vh;
