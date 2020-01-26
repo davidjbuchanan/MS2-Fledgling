@@ -72,12 +72,47 @@
 }
 
 #map {
-    min-height: 700px;
+    height: 400px;
+    width: 100%;
 }
 
-li {
-    list-style-type: none;   /*removes black dot*/
+.accordion {
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
 }
+ 
+.accordion .card,
+.accordion .card:last-child .card-header {
+  border: none;
+}
+ 
+.accordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+ 
+.accordion .fa-stack {
+  font-size: 18px;
+}
+ 
+.accordion .btn {
+  width: 100%;
+  font-weight: bold;
+  color: #004987;
+  padding: 0;
+}
+ 
+.accordion .btn-link:hover,
+.accordion .btn-link:focus {
+  text-decoration: none;
+}
+ 
+.accordion li + li {
+  margin-top: 10px;
+}
+
+
 .accommmodation-container-home {
     height: 100vh;
     background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
