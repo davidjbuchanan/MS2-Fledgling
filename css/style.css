@@ -1,6 +1,6 @@
 
-/*navbar*/
 
+/*-----------------navbar scroll-----------------*/
 .bg-dark {
     background-color: transparent !important;
     transition: 1000ms, ease;     /* !!!!!!!!!!!!!!!!!!!not working*/
@@ -10,8 +10,44 @@
     background-color: rgb(51, 40, 82) !important;
 
 }
+/*-----------------end---navbar scrolll-----------------*/
+/*-----------------navbar general-----------------*/
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
 
+.navbar-dark .navbar-brand {
+    color: white;
+    transition: all 0.35s ease-in-out;          
+	-moz-transition: all 0.35s ease-in-out;	
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
 
+.navbar-dark .navbar-brand:hover {				
+	color: #e86410;					            
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: white;
+    transition: all 0.35s ease-in-out;          
+	-moz-transition: all 0.35s ease-in-out;	
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link:hover {			
+	color: #e86410;					                        
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/*-----------------end---navbar general-----------------*/
+
+/*-----------------Containers-----------------*/
 .callout-container-home {
     height: 100vh;
     background: url('../images/stock-photo-city-scape-st-vincent-street-glasgow-749666785.jpg') no-repeat center fixed;
@@ -57,7 +93,7 @@
 }
 
 .neighbourhoods-container-home {
-    height: 100vh;
+    /*height: 100vh;        ADD FOR DESKTOP */
     background-color: white;
     /*-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -71,11 +107,46 @@
     position: relative;*/
 }
 
-#map {
-    height: 400px;
-    width: 100%;
+.accommmodation-container-home {
+    height: 100vh;
+    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    -webkit-background-size: cover%;
+    -moz-background-size: cover%;
+    -o-background-size: cover%;
+    background-size: cover;
+    
+    
+    display: flex;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+
+    position: relative;
 }
 
+.localservices-container-home {
+    height: 100vh;
+    background:  white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+
+    position: relative;  
+}
+/*-----------------end---Containers-----------------*/
+
+/*-----------------map-----------------*/
+#map {
+    height: 50vh;
+    width: 100%;
+}
+/*-----------------end---map-----------------*/
+/*-----------------accordion-----------------*/
 .accordion {
   max-width: 500px;
   margin: 50px auto;
@@ -111,36 +182,210 @@
 .accordion li + li {
   margin-top: 10px;
 }
+/*-----------------end---accordion-----------------*/
 
+/*-----------------Media queries-----------------*/
+/*phone = short portrait*/
+@media (max-width:414px) and (max-height:736px) {            
 
-.accommmodation-container-home {
-    height: 100vh;
-    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
-    -webkit-background-size: cover%;
-    -moz-background-size: cover%;
-    -o-background-size: cover%;
-    background-size: cover;
-    
-    
-    display: flex;
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
+    .heading-text {
+        font-size: 1.2rem;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+    }
 
-    position: relative;
+    .accordion {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
-.localservices-container-home {
-    height: 100vh;
-    background:  white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/*phone = long portrait*/
+@media (max-width:414px) and (min-height:812px) {            
 
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
+    .heading-text {
+        font-size: 1.5rem;
+        padding-top: 60px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+    }
 
-    position: relative;  
+    .accordion {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
+
+/*tablet = iPad portrait*/
+@media (max-width:768px) and (min-height:1024px) {    
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 80px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+}
+
+/*tablet = iPad pro portrait*/
+@media (max-width:1024px) and (min-height:1366px) {  
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 80px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }  
+}
+
+/* desktop*/
+@media (min-width: 1025px) and (max-width: 2000px) and (min-height: 900px) {  
+    
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
+    .neighbourhoods-container-home {
+    height: 100vh;
+    }
+}
+
+/* lg desktop*/
+@media (min-width: 1701px) {   
+    
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
+    .neighbourhoods-container-home {
+    height: 100vh;
+    }
+}
+
+/*iPad pro landscape & small laptop*/
+@media (min-width: 1300px) and (max-width: 1366px) and (max-height: 1024px) {   
+    
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .neighbourhoods-container-home {
+    height: 100vh;
+    }
+}
+
+/*tablet = iPad landscape*/
+@media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
+   
+    .heading-text {
+        font-size: 3rem;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .neighbourhoods-container-home {
+    height: 100vh;
+    }
+}
+
+/*lg phone = landscape*/
+@media (min-width: 700px) and (max-width:850px) and (max-height: 414px) {         
+   
+    .heading-text {
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+}
+
+/*md phone = landscape*/
+@media (min-width: 640px) and (max-width:700px) and (max-height: 360px) {         
+   
+    .heading-text {
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+}
+
+/*sm phone = landscape*/
+@media (min-width: 568px) and (max-width:639px) and (max-height: 320px) {         
+   
+    .heading-text {
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+}
+/*-----------------end---Media queries-----------------*/
+/*-----------------Footers-----------------*/
+
+footer {
+    background-color :#f8f9fa;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.5rem;
+}
+
+button {
+    margin-top: 1px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a i {
+    font-size: 28px;
+    padding-top: 14px;
+    margin-right: 14px;
+    margin-left: 14px;
+    color: #17a2b8;
+    transition: all 0.35s ease-in-out;          
+	-moz-transition: all 0.35s ease-in-out;	
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.social-links a i:hover {						
+	color: #e86410;					            
+}
+
+.form-control {
+    width: 100%;
+}
+
+#emailHelp {
+    text-align: center;
+}
+
+#social-margin {
+    margin-bottom: 0px;
+}
+/*-----------------end---Footers-----------------*/
