@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 
-	<!--EmailJS snipit start disabled-->
+	<!---EmailJS snipit start disabled--->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function(){
@@ -19,7 +19,7 @@
        })();
 	</script>
 
-	<!--EmailJS snipit end-->
+	<!---EmailJS snipit end-->
 
 	<title>Fledgling Glasgow</title>
 </head>
@@ -34,16 +34,15 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
+					<a class="nav-link" href="#about">about</a>
+				</li>
+                <li class="nav-item active">
 					<a class="nav-link" href="#neighbourhoods">neighbourhoods</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="#accommodation">accommodation</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#local services">local services</a>
-				</li>
 			</ul>
-
 		</div>
 		<div class="d-none d-lg-block">
 			<p class="navbar-text my-auto mr-2"><i>A millenial's guide to living in Glasgow</i></p>
@@ -51,41 +50,43 @@
 	</nav>
 	<!---/nav--->
 	<article>
-		<!-- callout -->
-		<div class="container-fluid callout-container-home" id="home">
+		<!---callout--->
+		<div class="container-fluid callout-container" id="home">
 			<div class="opaque-overlay">&nbsp;</div>
 		</div>
-		<!-- /callout -->
-
-		<!-- welcome -->
-		<div class="container-fluid welcome-container-home">
+		<!---/callout--->
+      <!---navbar transition--->
+        <div class="container-fluid navtrans-container">
 			<div class="row">
 				<div class="col-12">
-					<section class="jumbotron text-center">
-						<h1 class="heading-text">Glasgow</h1>
-						<p>With an intoxicating blend of modern architecture, vibrant culture and friendly people this
+				</div>
+			</div>
+		</div>
+        <!---/navbar transition--->
+        <!---welcome-->
+		<div class="container-fluid welcome-container" id="about">
+			<div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+				<div class="col-12">
+					<section class="jumbotron-about text-center">
+						<h2 class="heading-text-about">Glasgow</h2>
+						<p class="body-text">With an intoxicating blend of modern architecture, vibrant culture and friendly people this
 							once industrial city has undergone a renaisance to become an ideal destination for those
-							seeking study and work. </p>
+							seeking study and work.</p>
 					</section>
 				</div>
 			</div>
 		</div>
-		<!-- /welcome -->
-
-		<!-- neighbourhoods -->
-		<div class="container-fluid neighbourhoods-container-home" id="neighbourhoods">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-					<div class="row">
-						<div class="col-12">
-							<h3 class="heading-text">Neighbourhoods</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<!---/welcome--->
+		<!---neighbourhoods--->
+		<div class="container-fluid neighbourhoods-container" id="neighbourhoods">
+            <div class="jumbotron-hood jumbotron-fluid">
+                <div class="container">
+                    <h3 class="heading-text-hood">Neighbourhoods</h3>
+                </div>
+            </div>
+			<div class="row">		
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="row">
 						<div class="col-12">
 							<div class="accordion" id="hoodAccordion">
@@ -237,19 +238,22 @@
 						</div>
 					</div>
 				</div>
-                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mapStyle">
 					<div id="map"></div><!--class="overflow-auto"-->
 				</div>
 			</div>
 		</div>
-		<!-- /neighbourhoods -->
-		<!-- accommodation -->
-		<div class="container-fluid accommmodation-container-home" id="accommodation">
-			<div class="row">
-				<div class="col-12">
-					<section class="jumbotron text-center">
-						<h1 class="heading-text">Accommodation</h1>
-					</section>
+		<!---/neighbourhoods--->
+		<!---accommodation--->
+		<div class="container-fluid accommmodation-container" id="accommodation">
+			<div class="opaque-overlay">&nbsp;</div>
+            <div class="jumbotron-accomm-title jumbotron-fluid">
+                <div class="container">
+                    <h3 class="heading-text-accomm">Accommodation</h3>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col jumbotron-accomm">
 					<div>
 						<h3 class="contact-heading uppercase text-center">Want some help finding accommodation?</h3>
 						<h5 class="uppercase text-center">Fill in the form below and our partners will be in touch
@@ -270,7 +274,6 @@
                                 <option>young professional</option>
                                 <option>mature professional / student</option>
                             </select>
-							<!--Which neighbourhoods are of interest to you?-->
 							<label for="exampleFormControlSelect2">Which neighbourhoods are of interest to you?</label>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="neighbourhood1" value="City centre" id="check1">
@@ -314,20 +317,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- /accommodation -->
-
-		<!-- local info -->
-		<div class="container-fluid localservices-container-home" id="local services">
-			<div class="row">
-				<div class="col-12">
-					<section class="jumbotron text-center">
-						<h1 class="heading-text">Local Services</h1>
-					</section>
-				</div>
-			</div>
-		</div>
-		<!-- /local info -->
-
+		<!---/accommodation--->
 	</article>
 	<footer class="container-fluid">
 		<div class="row">
@@ -390,30 +380,18 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
-	<!--End-Javascript for navbar and neighbourhood list--->
-
 	<!--Javascript for google maps API-->
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7t0qArTLvSFnKic1SCS_xg07cnDw4Kk&callback=initMap">
 	</script>
 	<script src="assets/js/maps.js"></script>
-	<!--End-Javascript for google maps API-->
-
 	<!--Javascript for emailJS API-->
 	<script src="assets/js/sendEmail.js"></script>
-	<!--End-Javascript for emailJS API-->
-
 	<!--Javascript for accordian-->
 	<script src="assets/js/accordian.js"></script>
-	<!--End-Javascript for accordian-->
-
-	<script>
-		var $nav = $(".bg-dark");
-        $(document).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > $('#home').height());
-        });
+    <!--Javascript for fixed navbar-->
+	<script src="assets/js/navbar.js">
     /*Credit to System 22 I.T. Solutions 'Bootstrap 4 Change Navbar Background Color On Scroll' @ https://www.youtube.com/watch?v=AM-GT_0Uu5w*/
 	</script>
 </body>
-
 </html>

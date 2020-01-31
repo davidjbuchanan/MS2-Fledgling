@@ -1,17 +1,15 @@
-
-
-/*-----------------navbar scroll-----------------*/
+/*---navbar scroll---*/
 .bg-dark {
     background-color: transparent !important;
     transition: 1000ms, ease;     /* !!!!!!!!!!!!!!!!!!!not working*/
 }
 
 .bg-dark.scrolled {
-    background-color: rgb(51, 40, 82) !important;
-
+    background-color: rgba(51, 40, 82, 0.8) !important;
 }
-/*-----------------end---navbar scrolll-----------------*/
-/*-----------------navbar general-----------------*/
+
+/*---/navbar scroll---*/
+/*---navbar general---*/
 .navbar {
     padding-top: 0px;
     padding-bottom: 5px;
@@ -44,109 +42,102 @@
 .navbar-brand {
     font-weight: bold;
 }
+/*---/navbar general---*/
 
-/*-----------------end---navbar general-----------------*/
-
-/*-----------------Containers-----------------*/
-.callout-container-home {
+/*---Containers---*/
+.callout-container {
     height: 100vh;
     background: url('../images/stock-photo-city-scape-st-vincent-street-glasgow-749666785.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
     display: flex;
     /*align-items: center;*/
     justify-content: center;
-
     position: relative;
 }
 
-/*jumbotron*/
-.jumbotron {
-    background-color: transparent;
+.navtrans-container {
+    height: 0.5vh;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-.welcome-container-home {
+.welcome-container {
     height: 100vh;
     background: url('../images/stock-photo-glasgow-scotland-july-equestrian-statue-of-duke-of-wellington-wearing-a-traffic-cone-on-his-706698670.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
-.neighbourhoods-container-home {
-    /*height: 100vh;        ADD FOR DESKTOP */
-    background-color: white;
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;                       /delete otherwise the map is hidden beneath the bg
-    align-items: center;                   delete otherwise the map is hidden beneath the bg
-    justify-content: center;
-
-    position: relative;*/
-}
-
-.accommmodation-container-home {
-    height: 100vh;
-    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
-    -webkit-background-size: cover%;
-    -moz-background-size: cover%;
-    -o-background-size: cover%;
-    background-size: cover;
-    
-    
-    display: flex;
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-
-    position: relative;
-}
-
-.localservices-container-home {
-    height: 100vh;
-    background:  white;
+.neighbourhoods-container {
+    /*height: 100vh;        ADD FOR DESKTOP only*/
+    background-color: rgba(51, 40, 82, 0.2);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /*display: flex;                       delete otherwise the map is hidden beneath the bg*/
+    /*align-items: center;                   delete otherwise the map is hidden beneath the bg*/
+    justify-content: center;
+    position: relative;
+}
 
-    display: flex;
+.container-fluid, .neighbourhoods-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.accommmodation-container {
+    height: 100vh;
+    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*display: flex;                             turned off to enable full width jumbotron*/
     /*align-items: center;*/
     justify-content: center;
-
-    position: relative;  
+    position: relative;
 }
-/*-----------------end---Containers-----------------*/
+/*---/Containers---*/
 
-/*-----------------map-----------------*/
+/*---overlay---*/
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 40, 82, 0.1);
+}
+
+/*---/overlay---*/
+/*---map---*/
 #map {
     height: 50vh;
     width: 100%;
 }
-/*-----------------end---map-----------------*/
-/*-----------------accordion-----------------*/
+
+.mapStyle{
+    margin-top: 50px;
+}
+/*---/map---*/
+/*---accordion---*/
 .accordion {
   max-width: 500px;
   margin: 50px auto;
@@ -155,7 +146,7 @@
  
 .accordion .card,
 .accordion .card:last-child .card-header {
-  border: none;
+  /*border: none;*/
 }
  
 .accordion .card-header {
@@ -170,7 +161,7 @@
 .accordion .btn {
   width: 100%;
   font-weight: bold;
-  color: #004987;
+  color: rgb(72, 55, 117);
   padding: 0;
 }
  
@@ -182,167 +173,719 @@
 .accordion li + li {
   margin-top: 10px;
 }
-/*-----------------end---accordion-----------------*/
-
-/*-----------------Media queries-----------------*/
+/*---/accordion---*/
+/*---Media queries---*/
 /*phone = short portrait*/
 @media (max-width:414px) and (max-height:736px) {            
+.jumbotron-about {
+        width: 250px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
 
-    .heading-text {
-        font-size: 1.2rem;
-        padding-top: 50px;
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.75rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+        font-size: 1.75rem;
+        padding-top: 25px;
         padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 20px;
+        padding-bottom: 50px;
+        padding-left: 0px;
     }
 
-    .accordion {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
-
-/*phone = long portrait*/
-@media (max-width:414px) and (min-height:812px) {            
-
-    .heading-text {
-        font-size: 1.5rem;
-        padding-top: 60px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 20px;
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
     }
 
-    .accordion {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
-
-/*tablet = iPad portrait*/
-@media (max-width:768px) and (min-height:1024px) {    
-    .heading-text {
+    .heading-text-accomm{
         font-size: 3rem;
-        padding-top: 80px;
+        padding-top: 25px;
         padding-right: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
         padding-left: 30px;
     }
 }
-
 /*tablet = iPad pro portrait*/
 @media (max-width:1024px) and (min-height:1366px) {  
-    .heading-text {
-        font-size: 3rem;
-        padding-top: 80px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 30px;
-    }  
-}
+    .jumbotron-about {
+        width: 900px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
 
-/* desktop*/
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+    }
+}
+/*phone = long portrait*/
+@media (max-width:414px) and (min-height:812px) {            
+.jumbotron-about {
+        width: 300px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.75rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+        font-size: 2rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+}
+/*tablet = iPad pro portrait*/
+@media (max-width:1024px) and (min-height:1366px) {  
+    .jumbotron-about {
+        width: 900px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+    }
+}
+/*tablet = iPad portrait*/
+@media (max-width:768px) and (min-height:1024px) {    
+    .jumbotron-about {
+        width: 650px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+}
+/*tablet = iPad pro portrait*/
+@media (max-width:1024px) and (min-height:1366px) {  
+    .jumbotron-about {
+        width: 900px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+    }
+}
+/*desktop*/
 @media (min-width: 1025px) and (max-width: 2000px) and (min-height: 900px) {  
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .jumbotron-accomm-title {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
     
-    .heading-text {
+    .heading-text-accomm{
         font-size: 3rem;
-        padding-top: 100px;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+}
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+}
+/*lg desktop*/
+@media (min-width: 1701px) {    
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+        font-size: 3rem;
+        padding-top: 25px;
         padding-right: 0px;
         padding-bottom: 50px;
         padding-left: 30px;
     }
 
-    .neighbourhoods-container-home {
-    height: 100vh;
+    .neighbourhoods-container {
+        height: 100vh;
     }
-}
 
-/* lg desktop*/
-@media (min-width: 1701px) {   
-    
-    .heading-text {
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
         font-size: 3rem;
-        padding-top: 100px;
+        padding-top: 25px;
         padding-right: 0px;
         padding-bottom: 50px;
         padding-left: 30px;
     }
-
-    .neighbourhoods-container-home {
-    height: 100vh;
-    }
 }
-
 /*iPad pro landscape & small laptop*/
 @media (min-width: 1300px) and (max-width: 1366px) and (max-height: 1024px) {   
-    
-    .heading-text {
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
         font-size: 3rem;
-        padding-top: 100px;
+        padding-top: 25px;
         padding-right: 0px;
         padding-bottom: 50px;
         padding-left: 0px;
     }
 
-    .neighbourhoods-container-home {
-    height: 100vh;
+    .neighbourhoods-container {
+        height: 100vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
     }
 }
-
 /*tablet = iPad landscape*/
 @media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
-   
-    .heading-text {
-        font-size: 3rem;
-        padding-top: 100px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 0px;
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
     }
 
-    .neighbourhoods-container-home {
-    height: 100vh;
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 20px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 2.3rem;
+            padding-top: 50px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 15px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 30px;
     }
 }
-
 /*lg phone = landscape*/
 @media (min-width: 700px) and (max-width:850px) and (max-height: 414px) {         
-   
-    .heading-text {
-        font-size: 2rem;
-        padding-top: 50px;
+    .jumbotron-about {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.8rem;
+        font-weight: 250;
+        padding-bottom: 10px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 15px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 1.8rem;
+            padding-top: 30px;
+            padding-right: 0px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+    }
+
+    #map {
+        height: 75vh;
+    }
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+        font-size: 3rem;
+        padding-top: 25px;
         padding-right: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
         padding-left: 30px;
     }
 }
-
 /*md phone = landscape*/
-@media (min-width: 640px) and (max-width:700px) and (max-height: 360px) {         
-   
-    .heading-text {
-        font-size: 2rem;
-        padding-top: 50px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 30px;
+@media (min-width: 640px) and (max-width:700px) and (max-height: 380px) {         
+    .jumbotron-about {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.8rem;
+        font-weight: 250;
+        padding-bottom: 10px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 15px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    #map {
+        height: 75vh;
+    }
+
+    .heading-text-hood {
+            font-size: 1.8rem;
+            padding-top: 30px;
+            padding-right: 0px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+            font-size: 3rem;
+            padding-top: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+            padding-left: 30px;
     }
 }
-
 /*sm phone = landscape*/
 @media (min-width: 568px) and (max-width:639px) and (max-height: 320px) {         
-   
-    .heading-text {
-        font-size: 2rem;
-        padding-top: 50px;
+     .jumbotron-about {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.8rem;
+        font-weight: 250;
+        padding-bottom: 10px;
+    }
+
+    .jumbotron-hood {
+        padding-top: 15px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-text-hood {
+            font-size: 1.8rem;
+            padding-top: 30px;
+            padding-right: 0px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+    }
+
+    #map {
+        height: 75vh;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.7);
+    }
+
+    .heading-text-accomm{
+        font-size: 3rem;
+        padding-top: 25px;
         padding-right: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
         padding-left: 30px;
     }
 }
-/*-----------------end---Media queries-----------------*/
-/*-----------------Footers-----------------*/
-
+/*---/Media queries---*/
+/*---Footers---*/
 footer {
     background-color :#f8f9fa;
 }
@@ -388,4 +931,4 @@ button {
 #social-margin {
     margin-bottom: 0px;
 }
-/*-----------------end---Footers-----------------*/
+/*---/Footers---*/
