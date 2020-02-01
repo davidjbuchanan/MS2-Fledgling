@@ -71,7 +71,7 @@
     position: relative;
 }
 
-.welcome-container {
+.about-container {
     height: 100vh;
     background: url('../images/stock-photo-glasgow-scotland-july-equestrian-statue-of-duke-of-wellington-wearing-a-traffic-cone-on-his-706698670.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
@@ -103,12 +103,12 @@
 }
 
 .accommmodation-container {
-    height: 100vh;
-    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*height: 100vh;*/
+    /*background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;*/
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
     /*display: flex;                             turned off to enable full width jumbotron*/
     /*align-items: center;*/
     justify-content: center;
@@ -125,7 +125,6 @@
     width: 100%;
     background-color: rgba(51, 40, 82, 0.1);
 }
-
 /*---/overlay---*/
 /*---map---*/
 #map {
@@ -163,6 +162,7 @@
   font-weight: bold;
   color: rgb(72, 55, 117);
   padding: 0;
+  margin: 0;
 }
  
 .accordion .btn-link:hover,
@@ -174,10 +174,37 @@
   margin-top: 10px;
 }
 /*---/accordion---*/
+/*---form---*/
+.custom-control-label::before, 
+.custom-control-label::after {
+    top: .8rem;
+    width: 1.25rem;
+    height: 1.25rem;  
+}
+
+.custom-control-label {
+    padding-top: 5px;
+}
+
+.custom-checkbox {
+    margin-left: 25%;
+}
+
+.btn {
+    margin-left: 75%;
+}
+/*---/form---*/
 /*---Media queries---*/
 /*phone = short portrait*/
-@media (max-width:414px) and (max-height:736px) {            
-.jumbotron-about {
+@media (max-width:414px) and (max-height:811px) {            
+    .jumbotron-callout {
+        width: 250px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .jumbotron-about {
         width: 250px;
         margin-top: 200px;
         background-color: rgba(51, 40, 82, 0.7);
@@ -196,13 +223,13 @@
         padding-bottom: 50px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 40px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
+    .heading-title {
         font-size: 1.75rem;
         padding-top: 25px;
         padding-right: 0px;
@@ -210,80 +237,29 @@
         padding-left: 0px;
     }
 
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-    }
-}
-/*tablet = iPad pro portrait*/
-@media (max-width:1024px) and (min-height:1366px) {  
-    .jumbotron-about {
-        width: 900px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
-    }
-
-    .heading-text-about {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        font-size: 4.5rem;
-    }
-
-    .body-text {
-        font-size: 1.3rem;
-        font-weight: 350;
-        padding-bottom: 50px;
-    }
-
-    .jumbotron-hood {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-
-    .heading-text-hood {
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 0px;
-    }
-
-    .neighbourhoods-container {
-            height: 100vh;
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background-color: rgba(51, 40, 82, 0.2);
     }
 
     .jumbotron-accomm {
         padding: 16px 16px;
-        margin-top: 100px;
+        margin-top: 0px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 30px;
+        background-color: rgba(51, 40, 82, 1);
     }
 }
 /*phone = long portrait*/
 @media (max-width:414px) and (min-height:812px) {            
-.jumbotron-about {
+    .jumbotron-callout {
+        width: 300px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
+    .jumbotron-about {
         width: 300px;
         margin-top: 200px;
         background-color: rgba(51, 40, 82, 0.7);
@@ -302,13 +278,13 @@
         padding-bottom: 50px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 40px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
+    .heading-title {
         font-size: 2rem;
         padding-top: 25px;
         padding-right: 0px;
@@ -316,79 +292,29 @@
         padding-left: 0px;
     }
 
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background-color: rgba(51, 40, 82, 0.2);
     }
 
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 0px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 1);
     }
+
 }
-/*tablet = iPad pro portrait*/
-@media (max-width:1024px) and (min-height:1366px) {  
-    .jumbotron-about {
-        width: 900px;
+/*tablet = iPad portrait*/
+@media (max-width:768px) and (min-height:1024px) {    
+    .jumbotron-callout {
+        width: 650px;
         margin-top: 200px;
         background-color: rgba(51, 40, 82, 0.7);
         color: white;
     }
-
-    .heading-text-about {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        font-size: 4.5rem;
-    }
-
-    .body-text {
-        font-size: 1.3rem;
-        font-weight: 350;
-        padding-bottom: 50px;
-    }
-
-    .jumbotron-hood {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-
-    .heading-text-hood {
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 0px;
-    }
-
-    .neighbourhoods-container {
-            height: 100vh;
-    }
-
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 30px;
-    }
-}
-/*tablet = iPad portrait*/
-@media (max-width:768px) and (min-height:1024px) {    
+    
     .jumbotron-about {
         width: 650px;
         margin-top: 200px;
@@ -408,13 +334,13 @@
         padding-bottom: 50px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 40px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
+    .heading-title {
         font-size: 3rem;
         padding-top: 25px;
         padding-right: 0px;
@@ -422,24 +348,28 @@
         padding-left: 0px;
     }
 
+    .accommmodation-container {
+        height: 100vh;
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
     .jumbotron-accomm {
         padding: 16px 16px;
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
+        background-color: rgba(51, 40, 82, 0.9);
     }
 }
 /*tablet = iPad pro portrait*/
 @media (max-width:1024px) and (min-height:1366px) {  
+    .jumbotron-callout {
+        width: 900px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
     .jumbotron-about {
         width: 900px;
         margin-top: 200px;
@@ -459,185 +389,13 @@
         padding-bottom: 50px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 40px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 0px;
-    }
-
-    .neighbourhoods-container {
-            height: 100vh;
-    }
-
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 30px;
-    }
-}
-/*desktop*/
-@media (min-width: 1025px) and (max-width: 2000px) and (min-height: 900px) {  
-    .jumbotron-about {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
-    }
-
-    .heading-text-about {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        font-size: 4.5rem;
-    }
-
-    .body-text {
-        font-size: 1.3rem;
-        font-weight: 350;
-        padding-bottom: 50px;
-    }
-
-    .jumbotron-hood {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-
-    .heading-text-hood {
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 0px;
-    }
-
-    .neighbourhoods-container {
-            height: 100vh;
-    }
-
-    .jumbotron-accomm-title {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-    
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-}
-
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-}
-/*lg desktop*/
-@media (min-width: 1701px) {    
-    .jumbotron-about {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
-    }
-
-    .heading-text-about {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        font-size: 4.5rem;
-    }
-
-    .body-text {
-        font-size: 1.3rem;
-        font-weight: 350;
-        padding-bottom: 50px;
-    }
-
-    .jumbotron-hood {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-
-    .heading-text-hood {
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-    }
-
-    .neighbourhoods-container {
-        height: 100vh;
-    }
-
-    .jumbotron-accomm {
-        padding: 16px 16px;
-        margin-top: 100px;
-        border-radius: .3rem;
-        color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-    }
-}
-/*iPad pro landscape & small laptop*/
-@media (min-width: 1300px) and (max-width: 1366px) and (max-height: 1024px) {   
-    .jumbotron-about {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
-    }
-
-    .heading-text-about {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        font-size: 4.5rem;
-    }
-
-    .body-text {
-        font-size: 1.3rem;
-        font-weight: 350;
-        padding-bottom: 50px;
-    }
-
-    .jumbotron-hood {
-        padding-top: 40px;
-        background-color: rgba(51, 40, 82, 1); 
-        color: white;
-    }
-
-    .heading-text-hood {
+    .heading-title {
         font-size: 3rem;
         padding-top: 25px;
         padding-right: 0px;
@@ -649,24 +407,28 @@
         height: 100vh;
     }
 
+    .accommmodation-container {
+        height: 100vh;
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
     .jumbotron-accomm {
         padding: 16px 16px;
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
+        background-color: rgba(51, 40, 82, 0.9);
     }
 }
-/*tablet = iPad landscape*/
-@media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
+/*lg desktop*/
+@media (min-width: 1701px) {    
+    .jumbotron-callout {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
     .jumbotron-about {
         width: 1000px;
         margin-top: 200px;
@@ -686,42 +448,223 @@
         padding-bottom: 50px;
     }
 
-    .jumbotron-hood {
-        padding-top: 20px;
+    .jumbotron-title{
+        padding-top: 40px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
-            font-size: 2.3rem;
-            padding-top: 50px;
+    .heading-title {
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
+    .neighbourhoods-container {
+        height: 100vh;
+    }
+
+    .accommmodation-container {
+        height: 100vh;
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 1);
+    }
+}
+/*desktop*/
+@media (min-width: 1025px) and (max-width: 1700px) and (min-height: 900px) {  
+    .jumbotron-callout {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-title {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-title {
+            font-size: 3rem;
+            padding-top: 25px;
             padding-right: 0px;
             padding-bottom: 50px;
-            padding-left: 15px;
+            padding-left: 0px;
     }
 
     .neighbourhoods-container {
             height: 100vh;
     }
 
+    .accommmodation-container {
+        height: 100vh;
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 50px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.9);
+    }
+}
+/*iPad pro landscape & small laptop*/
+@media (min-width: 1300px) and (max-width: 1366px) and (max-height: 1024px) {   
+    .jumbotron-callout {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-title {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-title {
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .neighbourhoods-container {
+        height: 100vh;
+    }
+
+    .accommmodation-container {
+        height: 100vh;
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
     .jumbotron-accomm {
         padding: 16px 16px;
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.9);
+    }
+}
+/*tablet = iPad landscape*/
+@media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
+    .jumbotron-callout {
+        width: 1000px;
+        margin-top: 200px;
         background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
+    .jumbotron-about {
+        width: 1000px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
     }
 
-    .heading-text-accomm{
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 30px;
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 4.5rem;
+    }
+
+    .body-text {
+        font-size: 1.3rem;
+        font-weight: 350;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-title {
+        padding-top: 20px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-title {
+        font-size: 2.3rem;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+    }
+
+    .neighbourhoods-container {
+            height: 100vh;
+    }
+
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    }
+
+    .jumbotron-accomm {
+        padding: 16px 16px;
+        margin-top: 100px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 0.9);
     }
 }
 /*lg phone = landscape*/
 @media (min-width: 700px) and (max-width:850px) and (max-height: 414px) {         
+    .jumbotron-callout {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
     .jumbotron-about {
         width: 500px;
         margin-top: 50px;
@@ -741,13 +684,13 @@
         padding-bottom: 10px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 15px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
+    .heading-title {
             font-size: 1.8rem;
             padding-top: 30px;
             padding-right: 0px;
@@ -758,24 +701,29 @@
     #map {
         height: 75vh;
     }
+
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background-color: rgba(51, 40, 82, 0.2); 
+    }
+
     .jumbotron-accomm {
         padding: 16px 16px;
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
+        background-color: rgba(51, 40, 82, 1);
     }
 }
 /*md phone = landscape*/
 @media (min-width: 640px) and (max-width:700px) and (max-height: 380px) {         
+    .jumbotron-callout {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
     .jumbotron-about {
         width: 500px;
         margin-top: 50px;
@@ -795,7 +743,7 @@
         padding-bottom: 10px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 15px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
@@ -805,12 +753,17 @@
         height: 75vh;
     }
 
-    .heading-text-hood {
-            font-size: 1.8rem;
-            padding-top: 30px;
-            padding-right: 0px;
-            padding-bottom: 30px;
-            padding-left: 0px;
+    .heading-title {
+        font-size: 1.8rem;
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+    }
+
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background-color: rgba(51, 40, 82, 0.2); 
     }
 
     .jumbotron-accomm {
@@ -818,20 +771,19 @@
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-            font-size: 3rem;
-            padding-top: 25px;
-            padding-right: 0px;
-            padding-bottom: 50px;
-            padding-left: 30px;
+        background-color: rgba(51, 40, 82, 1);
     }
 }
 /*sm phone = landscape*/
 @media (min-width: 568px) and (max-width:639px) and (max-height: 320px) {         
-     .jumbotron-about {
+    .jumbotron-callout {
+        width: 500px;
+        margin-top: 50px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+    
+    .jumbotron-about {
         width: 500px;
         margin-top: 50px;
         background-color: rgba(51, 40, 82, 0.7);
@@ -850,22 +802,27 @@
         padding-bottom: 10px;
     }
 
-    .jumbotron-hood {
+    .jumbotron-title {
         padding-top: 15px;
         background-color: rgba(51, 40, 82, 1); 
         color: white;
     }
 
-    .heading-text-hood {
-            font-size: 1.8rem;
-            padding-top: 30px;
-            padding-right: 0px;
-            padding-bottom: 30px;
-            padding-left: 0px;
+    .heading-title {
+        font-size: 1.8rem;
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        padding-left: 0px;
     }
 
     #map {
         height: 75vh;
+    }
+
+    .accommmodation-container {
+        /*height: 100vh;*/
+        background-color: rgba(51, 40, 82, 0.2); 
     }
 
     .jumbotron-accomm {
@@ -873,21 +830,13 @@
         margin-top: 100px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
-    .heading-text-accomm{
-        font-size: 3rem;
-        padding-top: 25px;
-        padding-right: 0px;
-        padding-bottom: 50px;
-        padding-left: 30px;
+        background-color: rgba(51, 40, 82, 1);
     }
 }
 /*---/Media queries---*/
 /*---Footers---*/
 footer {
-    background-color :#f8f9fa;
+    background-color: rgba(72, 55, 117, 0.3);
 }
 
 h2 {
