@@ -117,13 +117,22 @@
 /*---/Containers---*/
 
 /*---overlay---*/
-.opaque-overlay {
+.opaque-overlay-callout {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(51, 40, 82, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.opaque-overlay-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 40, 82, 0.2);
 }
 /*---/overlay---*/
 /*---map---*/
@@ -190,7 +199,7 @@
     margin-left: 25%;
 }
 
-.btn {
+.btn-frm {
     margin-left: 75%;
 }
 /*---/form---*/
@@ -198,10 +207,24 @@
 /*phone = short portrait*/
 @media (max-width:414px) and (max-height:811px) {            
     .jumbotron-callout {
-        width: 250px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 300px;
+        margin-top: 20%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 2rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
 
     .jumbotron-about {
@@ -254,9 +277,23 @@
 @media (max-width:414px) and (min-height:812px) {            
     .jumbotron-callout {
         width: 300px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        margin-top: 20%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 2rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -309,10 +346,24 @@
 /*tablet = iPad portrait*/
 @media (max-width:768px) and (min-height:1024px) {    
     .jumbotron-callout {
-        width: 650px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 4rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.5rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -364,10 +415,24 @@
 /*tablet = iPad pro portrait*/
 @media (max-width:1024px) and (min-height:1366px) {  
     .jumbotron-callout {
-        width: 900px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 20%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 4rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.5rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -423,10 +488,24 @@
 /*lg desktop*/
 @media (min-width: 1701px) {    
     .jumbotron-callout {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 3rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.25rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -482,12 +561,26 @@
 /*desktop*/
 @media (min-width: 1025px) and (max-width: 1700px) and (min-height: 900px) {  
     .jumbotron-callout {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
+        background-color: transparent;
     }
     
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 3rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.25rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
+    }
+
     .jumbotron-about {
         width: 1000px;
         margin-top: 200px;
@@ -541,10 +634,24 @@
 /*iPad pro landscape & small laptop*/
 @media (min-width: 1300px) and (max-width: 1366px) and (max-height: 1024px) {   
     .jumbotron-callout {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 3rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.25rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -600,10 +707,24 @@
 /*tablet = iPad landscape*/
 @media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
     .jumbotron-callout {
-        width: 1000px;
-        margin-top: 200px;
-        background-color: rgba(51, 40, 82, 0.7);
-        color: white;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 3rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1.25rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
+        color: #17a2b8;
     }
     
     .jumbotron-about {
@@ -659,10 +780,23 @@
 /*lg phone = landscape*/
 @media (min-width: 700px) and (max-width:850px) and (max-height: 414px) {         
     .jumbotron-callout {
-        width: 500px;
-        margin-top: 50px;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
         background-color: rgba(51, 40, 82, 0.7);
         color: white;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
     }
     
     .jumbotron-about {
@@ -718,10 +852,23 @@
 /*md phone = landscape*/
 @media (min-width: 640px) and (max-width:700px) and (max-height: 380px) {         
     .jumbotron-callout {
-        width: 500px;
-        margin-top: 50px;
+        width: 600px;
+        margin-top: 15%;
+        padding-bottom: 20px;
         background-color: rgba(51, 40, 82, 0.7);
         color: white;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        font-weight: 350;
+        padding-bottom: 1s0px;
     }
     
     .jumbotron-about {
@@ -777,10 +924,23 @@
 /*sm phone = landscape*/
 @media (min-width: 568px) and (max-width:639px) and (max-height: 320px) {         
     .jumbotron-callout {
-        width: 500px;
-        margin-top: 50px;
+        width: 400px;
+        margin-top: 15%;
+        padding-bottom: 5px;
         background-color: rgba(51, 40, 82, 0.7);
         color: white;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-size: 2rem;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        font-weight: 250;
+        padding-bottom: 5px;
     }
     
     .jumbotron-about {
