@@ -1,6 +1,14 @@
 # Fledgling: Glasgow Edition
 ## David J. Buchanan's Interactive Frontend Development Milestone Project Submission
 
+
+Here's an image of a drag racer in action:
+
+![Drag Racing](file:///workspace/Interactive-Frontend-Project/images/stock-photo-blank-directional-road-signs-against-blue-sky-black-metal-arrows-on-the-signpost-warm-toned-644785699.jpg)
+
+Move along.
+
+
 Allow Fledgling to introduce you to the cities of the world by guiding you around the neighbourhoods and available accommodation. Aimed at young Millennials embarking on their first adventure outwith the parental home it is a 'must-have' guide to both students and young proffesionals when relocating to a new home city.
 On this site you can discover the Scottish city of Glasgow; get maps and descriptions of the neighbourhoods; sign up for a bespoke accommodation service; and stay 'up-to-date' site updates using the newsletter facility. 
 
@@ -95,6 +103,16 @@ Map functionality includes a 'heat map' to indicate accommodation costs.
 <li>
 Feature 10 - translate API
 Introduce a facility for non-english speaking users to translate the website content into alternate languages. 
+</li>
+
+<li>
+Feature 11 - Navbar
+Navbar collapse feature on iPhone 5 viewport size wraps to second line in portrait view.
+</li>
+
+<li>
+Feature 12 - Navbar
+Navbar background color change on downward scrol from callout-container to about-container requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
 </li>
 </ul>
 
@@ -201,23 +219,6 @@ Desktop
 </ul>
 
 
-## Bugs 
-
-The areas for improvement are:
-
-<ol>
-<li>
-Navbar collapse feature on iPhone 5 viewport size wraps to second line in portrait view.
-</li>
-<li>
-Navbar collapse on narrow viewport minimises on scrolling down.
-</li>
-<li>
-Navbar background color change on downward scrol from callout-container to about-container requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
-</li>
-<li>
-README.md page can open at the top or bottom of the page, meaning the user has to scroll to the top on initially openning the page.
-</ol>
 
 ## Deployment
 
