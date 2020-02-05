@@ -146,9 +146,9 @@
 /*/map*/
 /*accordion*/
 .accordion {
-  max-width: 500px;
-  margin: 50px auto;
-  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
 }
  
 .accordion .card,
@@ -157,30 +157,31 @@
 }
  
 .accordion .card-header {
-  border-bottom-color: #EDEFF0;
-  background: transparent;
+    border-bottom-color: #EDEFF0;
+    background: transparent;
 }
  
 .accordion .fa-stack {
-  font-size: 18px;
+    font-size: 18px;
 }
  
 .accordion .btn {
-  width: 100%;
-  font-weight: bold;
-  color: rgb(72, 55, 117);
-  padding: 0;
-  margin: 0;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(72, 55, 117);
+    padding: 0;
+    margin: 0;
 }
  
 .accordion .btn-link:hover,
 .accordion .btn-link:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
  
 .accordion li + li {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 /*/accordion*/
 /*form*/
 .custom-control-label::before, 
@@ -198,7 +199,7 @@
     margin-left: 25%;
 }
 
-.btn-frm {
+#btn-frm {
     margin-left: 75%;
 }
 /*/form*/
@@ -270,6 +271,20 @@
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 1);
     }
+
+    .accordion {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .card-header {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .mapStyle {
+        margin-top: 0px;
+    }
 }
 /*phone = long portrait*/
 @media (max-width:414px) and (min-height:812px) {            
@@ -338,6 +353,19 @@
         background-color: rgba(51, 40, 82, 1);
     }
 
+    .accordion {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .card-header {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .mapStyle {
+        margin-top: 0px;
+    }
 }
 /*tablet = iPad portrait*/
 @media (max-width:768px) and (min-height:1024px) {    
@@ -549,7 +577,7 @@
     }
 }
 /*desktop*/
-@media (min-width: 1025px) and (max-width: 1700px) and (min-height: 900px) {  
+@media (min-width: 769px) and (max-width: 1700px) and (min-height: 900px) {  
     .jumbotron-callout {
         width: 600px;
         margin-top: 15%;

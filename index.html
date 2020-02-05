@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="A description of Glasgow neighboorhods and accommodation">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/a0ff73228b.js"></script>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<!---EmailJS snipit start disabled-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 	<script type="text/javascript">
@@ -51,12 +52,12 @@
 		<!---callout-->
 		<div class="container-fluid callout-container" id="home">
 			<div class="opaque-overlay">&nbsp;</div>
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-12">
 					<section class="jumbotron-callout text-center">
 						<h1 class="heading-text-callout">Fledgling</h1>
 						<p class="body-text-callout">The essential guide to starting out in your new home city.</p>
-						<p><a class="btn btn-outline-info btn-lg" href="#about">Discover!</a></p>
+						<p><a class="btn btn-info btn-lg" href="#about">Discover!</a></p>
 					</section>
 				</div>
 			</div>
@@ -64,7 +65,7 @@
 		<!---/callout-->
 		<!---navbar transition-->
 		<div class="container-fluid navtrans-container">
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-12">
 				</div>
 			</div>
@@ -73,7 +74,7 @@
 		<!---welcome-->
 		<div class="container-fluid about-container" id="about">
 			<div class="opaque-overlay-about">&nbsp;</div>
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-12">
 					<section class="jumbotron-about text-center">
 						<h2 class="heading-text-about">Glasgow</h2>
@@ -93,9 +94,9 @@
 					<h2 class="heading-title">Neighbourhoods</h2>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-12">
 							<div class="accordion" id="hoodAccordion">
 								<!--https://getbootstrap.com/docs/4.4/components/collapse/#collapseshow
@@ -281,9 +282,9 @@
 					</div>
 					<div class="center-form">
 						<form onsubmit="return sendMail(this);">
-							<label for="exampleInputName">Your name</label>
+							<label for="fullname">Your name</label>
 							<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-							<label for="exampleInputEmail1">Email address</label>
+							<label for="emailaddress">Email address</label>
 							<input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
 							<label for="exampleFormControlSelect1">How would you describe yourself?</label>
 							<select class="form-control" name="employmentstatus" id="exampleFormControlSelect1">
@@ -329,8 +330,11 @@
 								<label class="custom-control-label" for="check6">
                                     Merchant City
                                 </label>
+
+                                
 							</div>
-							<button type="submit" class="btn-frm btn-info btn-md">Submit</button>
+							<span><button type="submit" class="btn btn-info btn-md" id="btn-frm">Submit</button></span>
+
 						</form>
 					</div>
 				</div>
@@ -339,7 +343,7 @@
 		<!---/accommodation-->
 	</article>
 	<footer class="container-fluid">
-		<div class="row">
+		<div class="row no-gutters">
 			<div class="d-none d-sm-block col-sm-6">
 				<h5 class="uppercase general-sub">Join the mailing list</h5>
 				<form>
