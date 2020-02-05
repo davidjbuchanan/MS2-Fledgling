@@ -4,7 +4,7 @@
 
 Here's an image of a drag racer in action:
 
-![Drag Racing](file:///workspace/Interactive-Frontend-Project/images/stock-photo-blank-directional-road-signs-against-blue-sky-black-metal-arrows-on-the-signpost-warm-toned-644785699.jpg)
+![Drag Racing](images/Interactive-Frontend-Project/images/stock-photo-blank-directional-road-signs-against-blue-sky-black-metal-arrows-on-the-signpost-warm-toned-644785699.jpg)
 
 Move along.
 
