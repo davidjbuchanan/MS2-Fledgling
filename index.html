@@ -8,43 +8,42 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/a0ff73228b.js"></script>
-
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-
 	<!---EmailJS snipit start disabled-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function(){
             emailjs.init("user_VuHH7gH01MALuxjLWlXKy");          
-       })();
+        })();
 	</script>
-
 	<!---EmailJS snipit end-->
-
 	<title>Fledgling Glasgow</title>
 </head>
+
 <body>
 	<!---nav-->
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-		<a class="navbar-brand" href="#home">Fledgling: Glasgow Edition</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#home">Fledgling: Glasgow Edition</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-        </button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#about">about</a>
-				</li>
-                <li class="nav-item active">
-					<a class="nav-link" href="#neighbourhoods">neighbourhoods</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#accommodation">accommodation</a>
-				</li>
-			</ul>
-		</div>
-		<div class="d-none d-lg-block">
-			<p class="navbar-text my-auto mr-2"><i>A millenial's guide to living in Glasgow</i></p>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#about">about</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#neighbourhoods">neighbourhoods</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#accommodation">accommodation</a>
+					</li>
+				</ul>
+			</div>
+			<div class="d-none d-lg-block">
+				<p class="navbar-text my-auto mr-2"><i>A millenial's guide to living in Glasgow</i></p>
+			</div>
 		</div>
 	</nav>
 	<!---/nav-->
@@ -52,33 +51,34 @@
 		<!---callout-->
 		<div class="container-fluid callout-container" id="home">
 			<div class="opaque-overlay">&nbsp;</div>
-            <div class="row">
+			<div class="row">
 				<div class="col-12">
 					<section class="jumbotron-callout text-center">
 						<h1 class="heading-text-callout">Fledgling</h1>
 						<p class="body-text-callout">The essential guide to starting out in your new home city.</p>
-                        <p><a class="btn btn-outline-info btn-lg" href="#about">Discover!</a></p>
+						<p><a class="btn btn-outline-info btn-lg" href="#about">Discover!</a></p>
 					</section>
 				</div>
 			</div>
 		</div>
 		<!---/callout-->
-      <!---navbar transition-->
-        <div class="container-fluid navtrans-container">
+		<!---navbar transition-->
+		<div class="container-fluid navtrans-container">
 			<div class="row">
 				<div class="col-12">
 				</div>
 			</div>
 		</div>
-        <!---/navbar transition-->
-        <!---welcome-->
+		<!---/navbar transition-->
+		<!---welcome-->
 		<div class="container-fluid about-container" id="about">
 			<div class="opaque-overlay-about">&nbsp;</div>
-            <div class="row">
+			<div class="row">
 				<div class="col-12">
 					<section class="jumbotron-about text-center">
 						<h2 class="heading-text-about">Glasgow</h2>
-						<p class="body-text">With an intoxicating blend of modern architecture, vibrant culture and friendly people this
+						<p class="body-text">With an intoxicating blend of modern architecture, vibrant culture and
+							friendly people this
 							once industrial city has undergone a renaisance to become an ideal destination for those
 							seeking study and work.</p>
 					</section>
@@ -88,13 +88,13 @@
 		<!---/welcome-->
 		<!---neighbourhoods-->
 		<div class="container-fluid neighbourhoods-container" id="neighbourhoods">
-            <div class="jumbotron-title jumbotron-fluid">
-                <div class="container">
-                    <h3 class="heading-title">Neighbourhoods</h3>
-                </div>
-            </div>
-			<div class="row">		
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="jumbotron-title jumbotron-fluid">
+				<div class="container">
+					<h2 class="heading-title">Neighbourhoods</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="row">
 						<div class="col-12">
 							<div class="accordion" id="hoodAccordion">
@@ -103,23 +103,25 @@
 								<div class="card">
 									<div class="card-header" id="headingOne">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" 
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href="#centre" onclick="changeCenter(centre)">
-                                                City Centre
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+												aria-controls="collapseOne" href="#centre"
+												onclick="changeCenter(centre)">
+												City Centre
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
                                                 </span>
-                                            </a>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-										data-parent="#hoodAccordion">
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"	data-parent="#hoodAccordion">
 										<div class="card-body">
 											Glasgow's city centre changes character as you move from east to west, going
 											from a frenetic blend of services, transport terminals, pubs and shops to
 											the more sedate terraces of thoroughfares like Bath St, where upmarket
-											offices sit over basements converted into stylish bars. This is where much of the city's
+											offices sit over basements converted into stylish bars. This is where much
+											of the city's
 											quality accommodation is clustered and is also a studenty zone, with a major
 											nightlife nexus on Sauchiehall St, which runs the length of the
 											neighbourhood.
@@ -129,45 +131,49 @@
 								<div class="card">
 									<div class="card-header" id="headingTwo">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="#finn" onclick="changeCenter(finn)">
-                                                Finnieston
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+												aria-controls="collapseTwo" href="#finn" onclick="changeCenter(finn)">
+												Finnieston
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
                                                 </span>
-                                            </a>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-										data-parent="#hoodAccordion">
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#hoodAccordion">
 										<div class="card-body">
 											Finnieston is a hip foodie hub of gourmet sandwich shops, artisanal coffee
 											bars and trendy organic restaurants specializing in Scottish meat and
 											seafood. Craft beers and gins are served up at stylish bars, while
 											old-school pubs offer vast whiskyselections and traditional folk music
-											sessions. The striking riverside venues SEC Armadillo and SSE Hydro stage rock and pop shows.
+											sessions. The striking riverside venues SEC Armadillo and SSE Hydro stage
+											rock and pop shows.
 										</div>
 									</div>
 								</div>
 								<div class="card">
 									<div class="card-header" id="headingThree">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="#west" onclick="changeCenter(westend)">
-                                                West End
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                </span>      
-                                            </a>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" 
+                                                aria-controls="collapseThree" href="#west" onclick="changeCenter(westend)">
+												West End
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                                                </span>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-										data-parent="#hoodAccordion">
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#hoodAccordion">
 										<div class="card-body">
 											With its appealing studenty buzz, modish bars and cafes and bohemian
 											swagger, the West End is for many the most engaging area of Glasgow – it's
 											great for people-watching. Streets of elegant terraced houses and ample
-											parkland cover large areas of the district, which is centred around the Victorian grandeur
+											parkland cover large areas of the district, which is centred around the
+											Victorian grandeur
 											of the University of Glasgow and the Kelvingrove Art Gallery & Museum.
 											Glasgow's key eat streets are also here.
 										</div>
@@ -176,23 +182,26 @@
 								<div class="card">
 									<div class="card-header" id="headingFour">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" href="#east" onclick="changeCenter(eastend)">
-                                                East End
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                </span>      
-                                            </a>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+												aria-controls="collapseFour" href="#east" onclick="changeCenter(eastend)">
+												East End
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                                                </span>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-										data-parent="#hoodAccordion">
+									<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#hoodAccordion">
 										<div class="card-body">
 											The East End includes the oldest part of the city, concentrated around
 											Glasgow Cathedral, and a range of traditional Glasgow districts that are
 											fast becoming hubs of creative activity. One of these, the Calton, once
-											famous for its linen mills, is now one of Britain's poorest areas; it hums with
-											life at its famous weekend Barras market. It's a predominantly Catholic area and a major
+											famous for its linen mills, is now one of Britain's poorest areas; it hums
+											with
+											life at its famous weekend Barras market. It's a predominantly Catholic area
+											and a major
 											focus of worship is the stadium of Celtic FC just down the road.
 										</div>
 									</div>
@@ -200,17 +209,18 @@
 								<div class="card">
 									<div class="card-header" id="headingFive">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" href="#south" onclick="changeCenter(southside)">
-                                                South Side
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+												aria-controls="collapseFive" href="#south" onclick="changeCenter(southside)">
+												South Side
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
                                                 </span>
-                                            </a>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-										data-parent="#hoodAccordion">
+									<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#hoodAccordion">
 										<div class="card-body">
 											Once a thriving shipbuilding area, the Clyde sank into dereliction during
 											the post-war era but has been subject to extensive rejuvenation. There are
@@ -222,23 +232,25 @@
 								<div class="card">
 									<div class="card-header" id="headingSix">
 										<h2 class="mb-0">
-											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" href="#merch" onclick="changeCenter(merchant)">
-                                                Merchant City
-                                                <span class="fa-stack fa-sm">
-                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+											<a class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+												data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+												aria-controls="collapseSix" href="#merch" onclick="changeCenter(merchant)">
+												Merchant City
+												<span class="fa-stack fa-sm" aria-hidden="true">
+                                                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                                    <i class="fas fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
                                                 </span>
-                                            </a>
+											</a>
 										</h2>
 									</div>
-									<div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-										data-parent="#hoodAccordion">
+									<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#hoodAccordion">
 										<div class="card-body">
 											What was once the domain of sober industrialists, whose palaces of trade and
 											commerce dignify the area, Merchant City is now a playground of restaurants,
 											bars and shops. It's an atmospheric zone that rewards idle strolling with
 											handsome facades and quirky architectural details. Come night-time, there's
-											a buzzy vibe as the area fills with social life and the knot of LGBT venues known as
+											a buzzy vibe as the area fills with social life and the knot of LGBT venues
+											known as
 											the Pink Triangle starts to hum.
 										</div>
 									</div>
@@ -247,8 +259,8 @@
 						</div>
 					</div>
 				</div>
-                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mapStyle">
-					<div id="map"></div><!--class="overflow-auto"-->
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mapStyle">
+					<div id="map"></div>
 				</div>
 			</div>
 		</div>
@@ -256,26 +268,23 @@
 		<!---accommodation-->
 		<div class="container-fluid accommmodation-container" id="accommodation">
 			<div class="opaque-overlay">&nbsp;</div>
-            <div class="jumbotron-title jumbotron-fluid">
-                <div class="container">
-                    <h3 class="heading-title">Accommodation</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center no-gutters">
+			<div class="jumbotron-title jumbotron-fluid">
+				<div class="container">
+					<h3 class="heading-title">Accommodation</h3>
+				</div>
+			</div>
+			<div class="row justify-content-center no-gutters">
 				<div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 jumbotron-accomm">
 					<div>
 						<h3 class="contact-heading uppercase text-center">Want some help finding accommodation?</h3>
-						<h5 class="uppercase text-center">Fill in the form below and our partners will be in touch
-						</h5>
+						<h4 class="uppercase text-center">Fill in the form below and our partners will be in touch</h4>
 					</div>
 					<div class="center-form">
 						<form onsubmit="return sendMail(this);">
 							<label for="exampleInputName">Your name</label>
 							<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-
 							<label for="exampleInputEmail1">Email address</label>
 							<input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-
 							<label for="exampleFormControlSelect1">How would you describe yourself?</label>
 							<select class="form-control" name="employmentstatus" id="exampleFormControlSelect1">
                                 <option>undergraduate student</option>
@@ -284,39 +293,39 @@
                                 <option>mature professional / student</option>
                             </select>
 							<label for="exampleFormControlSelect2">Which neighbourhoods are of interest to you?</label>
-                            <!--https://stackoverflow.com/questions/48293920/change-bootstrap-4-checkbox-size/48300261 WebDevBooster and D. Rosado-->
+							<!--https://stackoverflow.com/questions/48293920/change-bootstrap-4-checkbox-size/48300261 WebDevBooster and D. Rosado-->
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood1" value="City centre" id="check1">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood1" value="City centre" id="check1"/>
 								<label class="custom-control-label" for="check1">
                                     City centre
                                 </label>
 							</div>
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood2" value="Finnieston" id="check2">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood2" value="Finnieston" id="check2"/>
 								<label class="custom-control-label" for="check2">
                                     Finnieston
                                 </label>
 							</div>
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood3" value="West End" id="check3">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood3" value="West End" id="check3"/>
 								<label class="custom-control-label" for="check3">
                                     West End
                                 </label>
 							</div>
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood4" value="East End" id="check4">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood4" value="East End" id="check4"/>
 								<label class="custom-control-label" for="check4">
                                     East End
                                 </label>
 							</div>
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood5" value="South side" id="check5">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood5" value="South side" id="check5"/>
 								<label class="custom-control-label" for="check5">
                                     South side
                                 </label>
 							</div>
 							<div class="custom-control form-control-lg custom-checkbox">
-								<input class="custom-control-input" type="checkbox" name="neighbourhood6" value="Merchant City" id="check6">
+								<input class="custom-control-input" type="checkbox" name="neighbourhood6" value="Merchant City" id="check6"/>
 								<label class="custom-control-label" for="check6">
                                     Merchant City
                                 </label>
@@ -330,55 +339,55 @@
 		<!---/accommodation-->
 	</article>
 	<footer class="container-fluid">
-        <div class="row">
-            <div class="d-none d-sm-block col-sm-6">
-                <h2 class="uppercase general-sub">Join the mailing list</h2>
-                <form>
-                    <div class="form-row">
-                        <div class="offset-2 col-8">
-                            <label class="sr-only" for="exampleInputEmail1">Email address</label>
-                            <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. jane@gmail.com" required>
+		<div class="row">
+			<div class="d-none d-sm-block col-sm-6">
+				<h5 class="uppercase general-sub">Join the mailing list</h5>
+				<form>
+					<div class="form-row">
+						<div class="offset-2 col-8">
+							<label class="sr-only" for="exampleInputEmail1">Email address</label>
+							<input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. jane@gmail.com" required/>
                         </div>
-                        <div class="col-2">
-                            <button type="submit" class="btn btn-info btn-md">Submit</button>
-                        </div>
+						<div class="col-2">
+							<button type="submit" class="btn btn-info btn-md">Submit</button>
+						</div>
+						<div class="col-12">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
                     </div>
-                    <div class="col-12">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 col-sm-6 ">
-                <h2 id="social-margin" class="uppercase general-sub">Let's get social</h2>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="https://en-gb.facebook.com/" target="_blank">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/?lang=en-gb " target="_blank">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://uk.linkedin.com" target="_blank">
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">Linkedin</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com" target="_blank">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+				</form>
+			</div>
+			<div class="col-12 col-sm-6 ">
+				<h5 id="social-margin" class="uppercase general-sub">Let's get social</h5>
+				<ul class="list-inline social-links">
+					<li class="list-inline-item">
+						<a href="https://en-gb.facebook.com/" target="_blank">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://twitter.com/?lang=en-gb " target="_blank">
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+							<span class="sr-only">Twitter</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://uk.linkedin.com" target="_blank">
+							<i class="fab fa-linkedin" aria-hidden="true"></i>
+							<span class="sr-only">Linkedin</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.youtube.com" target="_blank">
+							<i class="fab fa-youtube" aria-hidden="true"></i>
+							<span class="sr-only">Youtube</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 	<!-- Javascript for navbar and neighbourhood list-->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -398,9 +407,10 @@
 	<script src="assets/js/sendEmail.js"></script>
 	<!--Javascript for accordian-->
 	<script src="assets/js/accordian.js"></script>
-    <!--Javascript for fixed navbar-->
+	<!--Javascript for fixed navbar-->
 	<script src="assets/js/navbar.js">
-    /*Credit to System 22 I.T. Solutions 'Bootstrap 4 Change Navbar Background Color On Scroll' @ https://www.youtube.com/watch?v=AM-GT_0Uu5w*/
+		/*Credit to System 22 I.T. Solutions 'Bootstrap 4 Change Navbar Background Color On Scroll' @ https://www.youtube.com/watch?v=AM-GT_0Uu5w*/
 	</script>
 </body>
+
 </html>

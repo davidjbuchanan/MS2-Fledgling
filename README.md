@@ -33,7 +33,9 @@ prior.
 
 ### Mockups 
 
-Generated on Lucidchart and can be accessed at 
+Generated on Lucidchart and can be accessed at https://www.lucidchart.com/invitations/accept/5cf6c53f-7c71-430a-b734-6b20243cf038
+
+Mockups for 3 different viewport sizes were rendered: desktop, landscape mobile and portrait mobile.
 
 ## Existing Features
 
@@ -89,6 +91,11 @@ About section includes links to other sites to inform the user to a greater exte
 Feature 9 - Map 
 Map functionality includes a 'heat map' to indicate accommodation costs.
 </li>
+
+<li>
+Feature 10 - translate API
+Introduce a facility for non-english speaking users to translate the website content into alternate languages. 
+</li>
 </ul>
 
 ## Technologies Used
@@ -110,45 +117,62 @@ Fontawesome https://fontawesome.com/
 
 ## Testing
 
-All testing performed manually on Google Chrome, using the following scenarios:
+The HTML and CSS code was validated on https://validator.w3.org/ and https://jigsaw.w3.org/css-validator/
 
-### Contact form:
-Go to the "Contact" page
+User testing was performed manually on Google Chrome, using the following scenarios:
 
-Try to submit the empty form and verify that an error message about the required fields appears - WORKS
+### Callout link:
+Try to click on the callout link 'Discover!', navigate to the about section - WORKS
+
+
+### Accommodation form:
+Go to the accommodation section via navbar link or by scrolling - WORKS
+
+Try to submit the empty form (with the exception of the default option of the dropdown field being occupied) and verify that an error message about the required fields appears - WORKS
+
+Try to submit form with no name and verify that an error message about the required fields appears - WORKS
+
+Try to submit form with no email and verify that an error message about the required fields appears - WORKS
 
 Try to submit the form with an invalid email address, i.e. missing '@', and verify that a relevant error message appears - WORKS
 
-Try to submit the form with all inputs valid and verify that a success message appears. - FAIL (see Feature 8 above)
+Try to submit the form with 1, 2, 3, 4, 5 or all 6 checkboxes checked - WORKS
+
+Try to submit the form with 0 checkboxes checked - WORKS (however this assumes that this field is not compulsory)
+
+Try to submit the form with all inputs valid and verify that a success message appears. - FAIL (see Feature 7 above)
+
+### Neighbourhoods accordion and interactive map:
+Go to the neighbourhoods section via navbar link or by scrolling - WORKS
+
+Try to open and close each card individually and view text and map update simultaneously - WORKS
+
+Try to open a card whilst another card is open. Have the former open and the latter auto-close - WORKS
+
+Try to interact with the Google map and have it respond as expected- WORKS
+
 
 ### Mailing list form:
-Go to any page
+Go to the footer section by scrolling - WORKS (Note: Chrome tools doesn't show the footer unless zoom set to less than 100%)
 
 Try to submit the empty form and verify that an error message about the required fields appears - WORKS
 
 Try to submit the form with an invalid email address, i.e. missing '@', and verify that a relevant error message appears- WORKS
 
-Try to submit the form with all inputs valid and verify that a success message appears.- FAIL (see Feature 8 above)
+Try to submit the form with all inputs valid and verify that a success message appears.- FAIL (see Feature 7 above)
 
 ### Social media links:
-Go to any page
+Go to the footer section by scrolling - WORKS (Note: Chrome tools doesn't show the footer unless zoom set to less than 100%)
 
 Try to click on the link, have a new page open and be directed to the site in question - WORKS
 
 ### Navigation bar (large screen or larger):
-Go to any page
 
-Try to click on the links and be directed to the site in question - WORKS
+Try to click on the links and be directed to the site in question - WORKS 
 
 ### Navigation bar (medium screen or smaller):
-Go to any page
 
-Try to click on the 'HOME' link or toggle button (& then links) and be directed to the site in question - WORKS
-
-### Product links:
-Go to the "Services" page
-
-Try to click on the link, have a new page open and be directed to the site in question - WORKS
+Try to click on the links and be directed to the site in question - WORKS (see 'bugs' section below
 
 ### Responsive Design
 The site was tested on the following screen sizes (landscape and portrait (where appropriate))
@@ -197,7 +221,8 @@ README.md page can open at the top or bottom of the page, meaning the user has t
 
 ## Deployment
 
-Deployment was on Github Pages https://davidjbuchanan.github.io/User-Centric-Frontend-Development-Milestone-Project/
+The code was written on Gitpod by first initiating a repository on Github. A single branch was used from which all code and images were deposited. 
+The subsequent deployment was on Github Pages and can be found at https://davidjbuchanan.github.io/Interactive-Frontend-Project/
 
 ## Credits
 
@@ -216,21 +241,20 @@ https://www.google.com/search?q=finnieston&rlz=1C1CHBF_en-GBGB883GB883&oq=finnie
 Shutterstock https://www.shutterstock.com/home
 
 ### Code
-The scrollable navbar changing backgound color on scroll from first to second section:
+The scrollable navbar changing backgound color on scroll from first to second container:
 System 22 I.T. Solutions 'Bootstrap 4 Change Navbar Background Color On Scroll' @ https://www.youtube.com/watch?v=AM-GT_0Uu5w
 
 The accommodation form's checkboxes were enlarged and styled using procured code:
 WebDevBooster and D. Rosado @ https://stackoverflow.com/questions/48293920/change-bootstrap-4-checkbox-size/48300261    
 
 The accordion styling with toggling +/-:
-https://getbootstrap.com/docs/4.4/components/collapse/#collapseshow
-George Martsoukos @ https://webdesign.tutsplus.com/tutorials/how-to-customize-bootstraps-4-accordion-component--cms-32510 
+https://getbootstrap.com/docs/4.4/components/collapse/#collapseshow George Martsoukos @ https://webdesign.tutsplus.com/tutorials/how-to-customize-bootstraps-4-accordion-component--cms-32510 
 
 The accommodation form's email API Java Script:
-Contains a lot of boiler plate code from emailJS
+Boiler plate code from emailJS
 
 The map API Java Script:
-Contains a lot of boiler plate code from Google
+Boiler plate code from Google
 
 
 
