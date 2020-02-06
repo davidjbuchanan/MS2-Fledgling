@@ -310,6 +310,7 @@
         padding-right: 0px;
         padding-bottom: 25px;
         padding-left: 0px;
+        margin-bottom: 0px;
     }
 
     .accommmodation-container {
@@ -322,7 +323,7 @@
         margin-top: 0px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 1);
+        background-color: rgba(51, 40, 82, 0.9);
     }
 
     .contact-heading {
@@ -352,6 +353,7 @@
     .about-container {
         background-attachment: scroll
     }
+    
     .jumbotron-callout {
         width: 300px;
         margin-top: 20%;
@@ -402,10 +404,11 @@
         padding-right: 0px;
         padding-bottom: 50px;
         padding-left: 0px;
+        margin-bottom: 0px;
     }
 
     .accommmodation-container {
-        background-color: rgba(51, 40, 82, 0.2);
+        background-color: rgba(51, 40, 82, 0.2) !important;
     }
 
     .jumbotron-accomm {
@@ -413,7 +416,7 @@
         margin-top: 0px;
         border-radius: .3rem;
         color: #f1eef7;
-        background-color: rgba(51, 40, 82, 1);
+        background-color: rgba(51, 40, 82, 0.9);
     }
 
     .accordion {
@@ -439,6 +442,7 @@
     .about-container {
         background-attachment: scroll
     }
+
     .jumbotron-callout {
         width: 500px;
         margin-top: 15%;
@@ -495,7 +499,7 @@
 
     .accommmodation-container {
         height: 100vh;
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+        background-color: rgba(51, 40, 82, 0.7);
     }
 
     .jumbotron-accomm {
@@ -515,6 +519,7 @@
     .about-container {
         background-attachment: scroll
     }
+    
     .jumbotron-callout {
         width: 600px;
         margin-top: 20%;
