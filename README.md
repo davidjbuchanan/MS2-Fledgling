@@ -30,7 +30,7 @@ prior.
 Generated on Lucidchart and can be accessed at https://www.lucidchart.com/invitations/accept/5cf6c53f-7c71-430a-b734-6b20243cf038
 
 Mockups for 3 different viewport sizes were rendered: desktop, landscape mobile and portrait mobile.
-![Desktop Demo](https://b51d835a-470a-4982-a1a1-cf3df6c3f4ee.ws-eu01.gitpod.io/files/download/?id=27fc13ed-e3c4-46b8-a852-43310bce86c8 "Desktop Demo")
+![](assets/mockup.jpeg)
 
 
 ## Existing Features
