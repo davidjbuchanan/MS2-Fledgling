@@ -44,7 +44,7 @@
 /*Containers*/
 .callout-container {
     height: 100vh;
-    background: url('../images/stock-photo-city-scape-st-vincent-street-glasgow-749666785.jpg') no-repeat center fixed;
+    background: url('../images/shutterstock_749666785.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -69,7 +69,7 @@
 
 .about-container {
     height: 100vh;
-    background: url('../images/stock-photo-glasgow-scotland-july-equestrian-statue-of-duke-of-wellington-wearing-a-traffic-cone-on-his-706698670.jpg') no-repeat center fixed;
+    background: url('../images/shutterstock_706698670.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -96,7 +96,7 @@
 }
 
 .accommmodation-container {
-    background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
+    background: url('../images/shutterstock_729714424.jpg') no-repeat center fixed;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -458,18 +458,18 @@
     .heading-text-callout {
         padding-bottom: 5px;
         padding-top: 10px;
-        font-size: 4rem;
+        font-size: 3rem;
         color: #17a2b8;
     }
 
     .body-text-callout {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         padding-bottom: 10px;
         color: #17a2b8;
     }
     
     .jumbotron-about {
-        width: 630px;
+        width: 500px;
         margin-top: 200px;
         padding-left: 10px;
         padding-right: 10px;
@@ -480,7 +480,7 @@
     .heading-text-about {
         padding-bottom: 10px;
         padding-top: 20px;
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .body-text {
@@ -578,7 +578,6 @@
 
     .accommmodation-container {
         height: 100vh;
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
     }
 
     .jumbotron-accomm {
@@ -649,7 +648,6 @@
 
     .accommmodation-container {
         height: 100vh;
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
     }
 
     .jumbotron-accomm {
@@ -719,7 +717,6 @@
     }
 
     .accommmodation-container {
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
     }
 
     .jumbotron-accomm {
@@ -798,7 +795,6 @@
 
     .accommmodation-container {
         height: 100vh;
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
     }
 
     .jumbotron-accomm {
@@ -876,7 +872,6 @@
     }
 
     .accommmodation-container {
-        background: url('../images/stock-photo-view-of-central-glasgow-in-scotland-uk-729714424.jpg') no-repeat center fixed;
     }
 
     .jumbotron-accomm {
@@ -946,6 +941,7 @@
         padding-right: 0px;
         padding-bottom: 30px;
         padding-left: 0px;
+        margin-bottom: 0px;
     }
 
     #map {
@@ -1027,6 +1023,7 @@
         padding-right: 0px;
         padding-bottom: 30px;
         padding-left: 0px;
+        margin-bottom: 0px;
     }
 
     .accommmodation-container {
@@ -1100,6 +1097,7 @@
         padding-right: 0px;
         padding-bottom: 30px;
         padding-left: 0px;
+        margin-bottom: 0px;
     }
 
     #map {
