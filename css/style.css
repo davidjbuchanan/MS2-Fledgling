@@ -253,11 +253,11 @@
 /*phone = short portrait*/
 @media (max-width:414px) and (max-height:811px) {            
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .jumbotron-callout {
@@ -347,11 +347,11 @@
 /*phone = long portrait*/
 @media (max-width:414px) and (min-height:812px) {            
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
     
     .jumbotron-callout {
@@ -436,11 +436,16 @@
 /*tablet = iPad portrait*/
 @media (max-width:768px) and (min-height:1024px) {    
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
+    }
+
+    .accommmodation-container {
+        height: 100vh;
+        background-attachment: scroll;
     }
 
     .jumbotron-callout {
@@ -497,11 +502,6 @@
         padding-left: 0px;
     }
 
-    .accommmodation-container {
-        height: 100vh;
-        background-color: rgba(51, 40, 82, 0.7);
-    }
-
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
@@ -513,11 +513,11 @@
 /*tablet = iPad pro portrait*/
 @media (max-width:1024px) and (min-height:1366px) {  
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
     
     .jumbotron-callout {
@@ -733,11 +733,11 @@
 /*iPad pro landscape & small laptop*/
 @media (min-width: 1300px) and (max-width: 1366px) and (min-height: 1010px) and (max-height: 1024px) {   
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
     
     .jumbotron-callout {
@@ -812,12 +812,13 @@
 /*tablet = iPad landscape*/
 @media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
+
     .jumbotron-callout {
         width: 600px;
         margin-top: 15%;
@@ -889,11 +890,11 @@
 /*lg phone = landscape*/
 @media (min-width: 700px) and (max-width:850px) and (max-height: 414px) {         
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .jumbotron-callout {
@@ -966,11 +967,11 @@
 /*md phone = landscape*/
 @media (min-width: 640px) and (max-width:700px) and (max-height: 380px) {         
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
     
     .jumbotron-callout {
@@ -1043,11 +1044,11 @@
 /*sm phone = landscape*/
 @media (min-width: 568px) and (max-width:639px) and (max-height: 320px) {         
     .callout-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 
     .about-container {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
     
     .jumbotron-callout {
