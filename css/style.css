@@ -432,6 +432,13 @@
 }
 /*tablet = iPad portrait*/
 @media (max-width:768px) and (min-height:1024px) {    
+    .callout-container {
+        background-attachment: scroll
+    }
+
+    .about-container {
+        background-attachment: scroll
+    }
     .jumbotron-callout {
         width: 500px;
         margin-top: 15%;
@@ -501,6 +508,13 @@
 }
 /*tablet = iPad pro portrait*/
 @media (max-width:1024px) and (min-height:1366px) {  
+    .callout-container {
+        background-attachment: scroll
+    }
+
+    .about-container {
+        background-attachment: scroll
+    }
     .jumbotron-callout {
         width: 600px;
         margin-top: 20%;
@@ -713,6 +727,14 @@
 }
 /*iPad pro landscape & small laptop*/
 @media (min-width: 1300px) and (max-width: 1366px) and (min-height: 1010px) and (max-height: 1024px) {   
+    .callout-container {
+        background-attachment: scroll
+    }
+
+    .about-container {
+        background-attachment: scroll
+    }
+    
     .jumbotron-callout {
         width: 600px;
         margin-top: 15%;
@@ -784,6 +806,13 @@
 }
 /*tablet = iPad landscape*/
 @media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {    
+    .callout-container {
+        background-attachment: scroll
+    }
+
+    .about-container {
+        background-attachment: scroll
+    }
     .jumbotron-callout {
         width: 600px;
         margin-top: 15%;
