@@ -1,38 +1,24 @@
 # Fledgling: Glasgow Edition
 ## David J. Buchanan's Interactive Frontend Development Milestone Project Submission
 
-
-Here's an image of a drag racer in action:
-
-![Drag Racing](images/Interactive-Frontend-Project/images/stock-photo-blank-directional-road-signs-against-blue-sky-black-metal-arrows-on-the-signpost-warm-toned-644785699.jpg)
-
-Move along.
-
-
 Allow Fledgling to introduce you to the cities of the world by guiding you around the neighbourhoods and available accommodation. Aimed at young Millennials embarking on their first adventure outwith the parental home it is a 'must-have' guide to both students and young proffesionals when relocating to a new home city.
 On this site you can discover the Scottish city of Glasgow; get maps and descriptions of the neighbourhoods; sign up for a bespoke accommodation service; and stay 'up-to-date' site updates using the newsletter facility. 
 
-Note: This website provides a portal through which a fictional relocation service advertises its services. All descriptions therein are representative of Glasgow City.  
+Note: The website provides a portal through which a fictional relocation service advertises its services. All descriptions therein are representative of Glasgow City.  
 
 ## UX
 
-The webite was designed for the purpose of the Code Institute's Interactive Frontend Development Milestone Project Submission. The brief required a a front-end web application consisting of one or more HTML pages with significant interactive functionality. The inclusion of information, links, imagery and functionality were designed to acheive this goal.
+The website was designed for the purpose of the Code Institute's Interactive Frontend Development Milestone Project Submission. The brief required a a front-end web application consisting of one or more HTML pages with significant interactive functionality. The inclusion of information, links, imagery and functionality were designed to acheive this goal.
 The target users are listed below:
 
 <ul>
-<li>Type (1) User is an undergraduate student wishing to relocate to Glasgow from the parental home and is looking for a guide to Glasgow. The user is 17 to 20 years old and 
-is not experienced at relocating or living in Glasgow. User wants information on accommodation and neighbourhoods so that they can live within their economic 
-means whilst safely enjoying the benefits of living in Glasgow.
+<li>Type (1) User is a student/young proffesional wishing to learn about Glasgow's neighbourhoods for the purposes of relocating.
 </li>
 
-<li>Type (2) User is an undergraduate student wishing to relocate to private accommodation, within Glasgow, from university accommodation and is looking for a guide to 
-to private accommodation within Glasgow. The user is > 18 years old and is not experienced at relocating. User wants information on accommodation and neighbourhoods so that they 
-can live within their economic means whilst safely enjoying the benefits of living in Glasgow.
+<li>Type (2) User is a student/young proffesional wishing to enlist the services of an accommodation finder.
 </li>  
 
-<li>Type (3) User is a graduate / young professional that wishes to relocate to Glasgow and is looking for a guide to to private accommodation within Glasgow. The 
-user is > 21 years old and is not knowledgable about Glasgow. User wants information on accommodation and neighbourhoods so that they can live within their economic 
-means whilst safely enjoying the benefits of living in Glasgow.</li>
+<li>Type (3) User is a student/young proffesional wishing to keep up-to-date about Glasgow's accommodation news via a newsletter</li>
 
 <li>Type (4) User is the parent/gaurdian/financial sponsor of user types 1, 2 or 3 and has a vested interest in the relocation of their child/ward/sponsee for the reasons given
 prior.
@@ -44,6 +30,8 @@ prior.
 Generated on Lucidchart and can be accessed at https://www.lucidchart.com/invitations/accept/5cf6c53f-7c71-430a-b734-6b20243cf038
 
 Mockups for 3 different viewport sizes were rendered: desktop, landscape mobile and portrait mobile.
+![Desktop Demo](https://b51d835a-470a-4982-a1a1-cf3df6c3f4ee.ws-eu01.gitpod.io/files/download/?id=a54bb2f0-9f65-4c75-a382-e4edfabbfb44 "Desktop Demo")
+
 
 ## Existing Features
 
@@ -101,7 +89,7 @@ Map functionality includes a 'heat map' to indicate accommodation costs.
 </li>
 
 <li>
-Feature 10 - translate API
+Feature 10 - Translate API
 Introduce a facility for non-english speaking users to translate the website content into alternate languages. 
 </li>
 
@@ -112,7 +100,7 @@ Navbar collapse feature on iPhone 5 viewport size wraps to second line in portra
 
 <li>
 Feature 12 - Navbar
-Navbar background color change on downward scrol from callout-container to about-container requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
+Navbar background color change on downward scroll from callout-container to about-container requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
 </li>
 </ul>
 
@@ -137,7 +125,7 @@ Fontawesome https://fontawesome.com/
 
 The HTML and CSS code was validated on https://validator.w3.org/ and https://jigsaw.w3.org/css-validator/
 
-User testing was performed manually on Google Chrome, using the following scenarios:
+User testing was performed manually on Google Chrome inspect tools, using the following scenarios:
 
 ### Callout link:
 Try to click on the callout link 'Discover!', navigate to the about section - WORKS
@@ -190,7 +178,7 @@ Try to click on the links and be directed to the site in question - WORKS
 
 ### Navigation bar (medium screen or smaller):
 
-Try to click on the links and be directed to the site in question - WORKS (see 'bugs' section below
+Try to click on the links and be directed to the site in question - WORKS (see 'bugs' section below)
 
 ### Responsive Design
 The site was tested on the following screen sizes (landscape and portrait (where appropriate))
@@ -203,6 +191,9 @@ Apple iPad
 </li>
 <li>
 Apple iPhone 5/SE/6/7/8/X/6 plus/7 plus/8 plus
+Note: when tested on actual iPhone 6 the  background-attachment: fixed was not compatible with iOS browsers. 
+On Chrome and Safari in iOS, the background photos appeared zoomed-in and blurry. To fix this, the .background-attachment: scroll 
+property value was added in a media query.
 </li>
 <li>
 Samsung Galaxy S5
@@ -238,7 +229,7 @@ https://www.google.com/search?q=finnieston&rlz=1C1CHBF_en-GBGB883GB883&oq=finnie
 
 
 ### Media
-#### The photos used in this site were obtained from stock supply sources and from the Code Institute:
+The photos used in this site were obtained from stock supply sources:
 Shutterstock https://www.shutterstock.com/home
 
 ### Code
@@ -256,6 +247,9 @@ Boiler plate code from emailJS
 
 The map API Java Script:
 Boiler plate code from Google
+
+Responsive design on iOS by employing use of .background-attachment: scroll class:
+Code Institute @ https://github.com/hschafer2017/HSCHAFER-Portfolio/blob/master/README.md
 
 
 
