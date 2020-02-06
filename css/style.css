@@ -250,8 +250,8 @@
     margin-left: 75%;
 }
 /*/form*/
-/*phone = portrait*/
-@media (max-width:414px) and (max-height:1023px) {            
+/*phone = short portrait*/
+@media (max-width:414px) and (max-height:811px) {            
     .callout-container {
         background-attachment: scroll
     }
@@ -261,7 +261,7 @@
     }
 
     .jumbotron-callout {
-        width: 300px;
+        width: 250px;
         margin-top: 20%;
         padding-bottom: 20px;
         background-color: transparent;
@@ -343,10 +343,97 @@
         margin-top: 0px;
     }
 }
+/*phone = long portrait*/
+@media (max-width:414px) and (min-height:812px) {            
+    .callout-container {
+        background-attachment: scroll
+    }
+
+    .about-container {
+        background-attachment: scroll
+    }
+    .jumbotron-callout {
+        width: 300px;
+        margin-top: 20%;
+        padding-bottom: 20px;
+        background-color: transparent;
+    }
+    
+    .heading-text-callout {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 2rem;
+        color: #17a2b8;
+    }
+
+    .body-text-callout {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        color: #17a2b8;
+    }
+    
+    .jumbotron-about {
+        width: 300px;
+        margin-top: 200px;
+        background-color: rgba(51, 40, 82, 0.7);
+        color: white;
+    }
+
+    .heading-text-about {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .body-text {
+        font-size: 0.75rem;
+        padding-bottom: 50px;
+    }
+
+    .jumbotron-title {
+        padding-top: 40px;
+        background-color: rgba(51, 40, 82, 1); 
+        color: white;
+    }
+
+    .heading-title {
+        font-size: 2rem;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .accommmodation-container {
+        background-color: rgba(51, 40, 82, 0.2);
+    }
+
+    .jumbotron-accomm {
+        padding: 16px;
+        margin-top: 0px;
+        border-radius: .3rem;
+        color: #f1eef7;
+        background-color: rgba(51, 40, 82, 1);
+    }
+
+    .accordion {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .card-header {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .mapStyle {
+        margin-top: 0px;
+    }
+}
 /*tablet = iPad portrait*/
 @media (max-width:768px) and (min-height:1024px) {    
     .jumbotron-callout {
-        width: 600px;
+        width: 500px;
         margin-top: 15%;
         padding-bottom: 20px;
         background-color: transparent;
@@ -366,8 +453,10 @@
     }
     
     .jumbotron-about {
-        width: 650px;
+        width: 630px;
         margin-top: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: rgba(51, 40, 82, 0.7);
         color: white;
     }
