@@ -8,7 +8,7 @@ Note: The website provides a portal through which a fictional relocation service
 
 ## UX
 
-The website was designed for the purpose of the Code Institute's Interactive Frontend Development Milestone Project Submission. The brief required a a front-end web application consisting of one or more HTML pages with significant interactive functionality. The inclusion of information, links, imagery and functionality were designed to acheive this goal.
+The website was designed for the purpose of the Code Institute's Interactive Frontend Development Milestone Project Submission. The brief required a front-end web application consisting of one or more HTML pages with significant interactive functionality. The inclusion of information, links, imagery and functionality were designed to acheive this goal.
 The target users are listed below:
 
 <ul>
@@ -19,10 +19,6 @@ The target users are listed below:
 </li>  
 
 <li>Type (3) User is a student/young proffesional wishing to keep up-to-date about Glasgow's accommodation news via a newsletter</li>
-
-<li>Type (4) User is the parent/gaurdian/financial sponsor of user types 1, 2 or 3 and has a vested interest in the relocation of their child/ward/sponsee for the reasons given
-prior.
-</li>
 </ul>
 
 ### Mockups 
@@ -50,18 +46,17 @@ otherwise looks identical on all pages. The feature is not enabled and the submi
 
 <li>
 Feature 3 - the footer
-Allows users to access the social links of the FPT. Clicking on the social media icon opens a new page that links to the respective site. The feature looks 
-identical on all pages.
+Allows users to access the social links belonging to Fledgling. Clicking on the social media icon opens a new page that links to the respective site.
 </li>
 
 <li>
 Feature 4 - the callout
-The homepage has a fullscreen background image with a callout inviting the user to click on the 'discover' button thus introducing them to a description of Glasgow.
+A fullscreen background image with a callout inviting the user to click on the 'discover' button thus introducing them to a description of Glasgow.
 </li>
 
 <li>
 Feature 5 - the neighbourhoods accordion
-An interactive accordion list of cards performs a dual role of allowing the users to read about areas in Glasgow whilst a map (sitting alongside the description) updates to focus on the specific area of interest. 
+An interactive accordion, i.e list of cards, performs a dual role of allowing the users to read about areas in Glasgow whilst a map (sitting alongside the description) updates to focus on the specific area of interest. 
 </li>
 
 <li>
@@ -95,12 +90,7 @@ Introduce a facility for non-english speaking users to translate the website con
 
 <li>
 Feature 11 - Navbar
-Navbar collapse feature on iPhone 5 viewport size wraps to second line in portrait view.
-</li>
-
-<li>
-Feature 12 - Navbar
-Navbar background color change on downward scroll from callout-container to about-container requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
+Navbar background color changes on downward scroll from the callout-container to the about-container. However this requires a navtrans-container to allow a seamless color change to occur. Better JavaScript code is sought for this in future. 
 </li>
 </ul>
 
@@ -119,6 +109,10 @@ Jquery https://jquery.com/
 Bootstrap https://getbootstrap.com/
 
 Fontawesome https://fontawesome.com/
+
+EmailJS API https://www.emailjs.com/ 
+
+Google Maps API https://developers.google.com/maps/documentation
 
 
 ## Testing
@@ -157,7 +151,6 @@ Try to open a card whilst another card is open. Have the former open and the lat
 
 Try to interact with the Google map and have it respond as expected- WORKS
 
-
 ### Mailing list form:
 Go to the footer section by scrolling - WORKS (Note: Chrome tools doesn't show the footer unless zoom set to less than 100%)
 
@@ -178,7 +171,7 @@ Try to click on the links and be directed to the site in question - WORKS
 
 ### Navigation bar (medium screen or smaller):
 
-Try to click on the links and be directed to the site in question - WORKS (see 'bugs' section below)
+Try to click on the links and be directed to the site in question - WORKS
 
 ### Responsive Design
 The site was tested on the following screen sizes (landscape and portrait (where appropriate))
@@ -221,6 +214,9 @@ The subsequent deployment was on Github Pages and can be found at https://davidj
 ### Layout
 The themes and layout were inspired by the Lonely Planet website
 https://www.lonelyplanet.com/scotland/glasgow
+
+Footer and Navbar based upon Matt Rudge's Rosie Odekirk resume page
+https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/tree/master/17-adding-contact-form
 
 ### Text 
 All content is taken from the Lonely Planet website and from Google:
