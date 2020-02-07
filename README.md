@@ -2,7 +2,7 @@
 ## David J. Buchanan's Interactive Frontend Development Milestone Project Submission
 
 Allow Fledgling to introduce you to the cities of the world by guiding you around the neighbourhoods and available accommodation. Aimed at young Millennials embarking on their first adventure outwith the parental home it is a 'must-have' guide to both students and young proffesionals when relocating to a new home city.
-On this site you can discover the Scottish city of Glasgow; get maps and descriptions of the neighbourhoods; sign up for a bespoke accommodation service; and stay 'up-to-date' site updates using the newsletter facility. 
+On this site you can discover the Scottish city of Glasgow; get maps and descriptions of the neighbourhoods; sign up for a bespoke accommodation service; and stay 'up-to-date' with Fledgling's updates using the newsletter facility. 
 
 Note: The website provides a portal through which a fictional relocation service advertises its services. All descriptions therein are representative of Glasgow City.  
 
