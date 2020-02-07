@@ -105,35 +105,6 @@
     position: relative;
 }
 /*/containers*/
-/*jumbotrons*/
-.jumbotron-callout {
-    width: 600px;
-    margin-top: 15%;
-    padding-bottom: 20px;
-    background-color: transparent;
-}
-
-.jumbotron-about {
-    width: 1000px;
-    margin-top: 200px;
-    background-color: rgba(51, 40, 82, 0.7);
-    color: white;
-}
-
-.jumbotron-title {
-    padding-top: 40px;
-    background-color: rgba(51, 40, 82, 1); 
-    color: white;
-}
-
-.jumbotron-accomm {
-    padding: 16px 16px !important;
-    margin-top: 50px;
-    border-radius: .3rem;
-    color: #f1eef7;
-    background-color: rgba(51, 40, 82, 0.9);
-}
-/*/jumbotrons*/
 /*text styling*/
 .heading-text-callout {
     padding-bottom: 5px;
@@ -444,7 +415,6 @@
     }
 
     .accommmodation-container {
-        height: 100vh;
         background-attachment: scroll;
     }
 
@@ -484,7 +454,7 @@
     }
 
     .body-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding-bottom: 50px;
     }
 
@@ -498,13 +468,14 @@
         font-size: 3rem;
         padding-top: 25px;
         padding-right: 0px;
-        padding-bottom: 50px;
+        padding-bottom: 30pxx;
         padding-left: 0px;
     }
 
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 0.9);
@@ -573,7 +544,6 @@
     }
 
     .neighbourhoods-container {
-        height: 100vh;
     }
 
     .accommmodation-container {
@@ -583,6 +553,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 0.9);
@@ -653,13 +624,14 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 1);
     }
 }
 /*desktop*/
-@media (min-width: 769px) and (max-width: 1700px) and (min-height: 900px) {  
+@media (min-width: 1025px) and (max-width: 1700px) and (min-height: 800px) {  
     .jumbotron-callout {
         width: 600px;
         margin-top: 15%;
@@ -722,6 +694,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 50px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 0.9);
@@ -800,6 +773,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 0.9);
@@ -877,6 +851,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 0.9);
@@ -955,6 +930,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 1);
@@ -1033,6 +1009,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 1);
@@ -1111,6 +1088,7 @@
     .jumbotron-accomm {
         padding: 16px 16px !important;
         margin-top: 100px;
+        margin-bottom: 20px;
         border-radius: .3rem;
         color: #f1eef7;
         background-color: rgba(51, 40, 82, 1);
