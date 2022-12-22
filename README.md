@@ -207,7 +207,7 @@ Desktop
 ## Deployment
 
 The code was written on Gitpod by first initiating a repository on Github. A single branch was used from which all code and images were deposited. 
-The subsequent deployment was on Github Pages and can be found at https://davidjbuchanan.github.io/Interactive-Frontend-Project/
+The subsequent deployment was on Github Pages and can be found at https://davidjbuchanan.github.io/MS2-Fledgling/
 
 ## Credits
 
